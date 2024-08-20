@@ -32,6 +32,7 @@ const buttonVariants = cva(
           'rounded-tr-lg rounded-tl-none rounded-bl-lg  rounded-br-none',
         'left-rounded':
           'rounded-tr-none rounded-tl-lg rounded-bl-none rounded-br-lg',
+        none: 'rounded-none',
       },
     },
     defaultVariants: {

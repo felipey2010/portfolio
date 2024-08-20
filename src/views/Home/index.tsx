@@ -1,13 +1,18 @@
+'use client'
 import CVDownloader from '@/components/CVDownloader'
 import HomeFooter from '@/components/HomeFooter'
 import SEO from '@/components/SEO'
 import { Button } from '@/components/ui/button'
+import { HomePageList } from '@/data/HomePageList'
 import { profilePic } from '@/data/Images'
 import { cn } from '@/lib/utils'
+import { useLanguage } from '@/Providers/LanguageProvider'
 import Image from 'next/image'
 import { RiSparkling2Fill } from 'react-icons/ri'
 
 function HomeView() {
+  const { language } = useLanguage()
+
   return (
     <>
       <SEO title="" description="Página inicial" />
@@ -26,41 +31,67 @@ function HomeView() {
               <span
                 className={cn(
                   'w-3 h-3 rounded-full animate-pulse',
-                  PresentationText.status ? 'bg-green-500' : 'bg-red-500'
+                  HomePageList.status ? 'bg-green-500' : 'bg-red-500'
                 )}
               />
               <p className="text-muted-foreground text-xs font-source-code">
-                {PresentationText.statusText}
+                {
+                  HomePageList.statusText[
+                    language as keyof typeof HomePageList.statusText
+                  ]
+                }
               </p>
             </span>
           </div>
           {/* Name presentation */}
           <div className="w-full flex flex-col items-center gap-2">
-            <h3 className="text-2xl font-semibold">{PresentationText.text}</h3>
+            <h3 className="text-2xl font-semibold">
+              {HomePageList.prefixName}
+            </h3>
             <h1 className="text-foreground text-4xl sm:text-6xl font-bold">
-              {PresentationText.name}
+              {HomePageList.name}
             </h1>
           </div>
           {/* Profession */}
           <div className="w-full flex items-center justify-center">
             <span className="flex items-center justify-center gap-4 p-4 rounded-xl bg-card-foreground/85 border-border text-input">
               <RiSparkling2Fill className="w-4 h-4 mx-2" />
-              <h2 className="uppercase">{PresentationText.profession}</h2>
+              <h2 className="uppercase">
+                {
+                  HomePageList.profession[
+                    language as keyof typeof HomePageList.profession
+                  ]
+                }
+              </h2>
               <RiSparkling2Fill className="w-4 h-4 mx-2" />
             </span>
           </div>
           {/* Description */}
           <div className="w-full flex items-center justify-center px-16">
             <h2 className="text-foreground whitespace-pre-wrap text-center">
-              {PresentationText.description}
+              {
+                HomePageList.description[
+                  language as keyof typeof HomePageList.description
+                ]
+              }
             </h2>
           </div>
           {/* Buttons */}
           <div className="w-full flex items-center justify-center gap-4">
             <Button variant="default" size="lg" borderStyle="left-rounded">
-              Contact me
+              {
+                HomePageList.button.contactMe[
+                  language as keyof typeof HomePageList.button.contactMe
+                ]
+              }
             </Button>
-            <CVDownloader />
+            <CVDownloader
+              buttonText={
+                HomePageList.button.downloadCV[
+                  language as keyof typeof HomePageList.button.downloadCV
+                ]
+              }
+            />
           </div>
         </div>
         {/* Footer */}
@@ -71,13 +102,3 @@ function HomeView() {
 }
 
 export default HomeView
-
-const PresentationText = {
-  status: true,
-  statusText: 'Available for new oportunities',
-  text: `<Hello World, I am />`,
-  name: 'Philip Akpanyi',
-  profession: 'Enthusiastic Web Developer',
-  description: `I'm dedicated to crafting innovative and user-centric digital experiences. With a keen eye for design and a strong foundation in programming, I transform ideas into engaging online solutions. \nMy goal is to create websites and applications that not only look stunning but also deliver exceptional functionality and performance. 
-`,
-}

@@ -28,11 +28,12 @@ function DateDisplay() {
   }
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    getCurrentDate()
+    const intervalId = setInterval(() => {
       getCurrentDate()
-    }, 1000)
-    return () => clearTimeout(timeoutId)
-  }, [date])
+    }, 60000)
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
     <Popover>
@@ -42,7 +43,7 @@ function DateDisplay() {
           className="flex items-center gap-1 text-foreground bg-transparent border-none shadow-none p-0 hover:bg-transparent"
         >
           <PiCalendarDotsThin className="w-4 h-4" />
-          <p className="min-w-fit text-sm flex items-center">{`${date.day.toString().padStart(2, '0')}-${date.month.toString().padStart(2, '0')}-${date.year}`}</p>
+          <p className="min-w-fit text-sm flex items-center font-normal">{`${date.day.toString().padStart(2, '0')}-${date.month.toString().padStart(2, '0')}-${date.year}`}</p>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">

@@ -15,7 +15,7 @@ function LanguageSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">
+        <Button variant="outline" size="icon" className="rounded-full">
           {language === 'en' ? (
             <USFlag width={16} height={16} />
           ) : (
