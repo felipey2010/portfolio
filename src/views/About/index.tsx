@@ -3,6 +3,7 @@ import { useSearchParams } from 'next/navigation'
 import General from './pages/General'
 import { useLanguage } from '@/Providers/LanguageProvider'
 import NotFound from './pages/NotFound'
+import Experience from './pages/Experience'
 
 function AboutView() {
   const searchParam = useSearchParams()
@@ -14,10 +15,14 @@ function AboutView() {
   }
 
   const tabPages = {
-    experience: <General selectedLanguage={language} />,
+    experience: <Experience selectedLanguage={language} />,
   }
 
-  return <NotFound selectedLanguage={language} />
+  return (
+    tabPages[tabQuery as keyof typeof tabPages] || (
+      <NotFound selectedLanguage={language} />
+    )
+  )
 }
 
 export default AboutView

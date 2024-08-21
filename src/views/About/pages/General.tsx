@@ -7,7 +7,7 @@ import {
 } from '@/data/AboutPageList'
 import { profilePic } from '@/data/Images'
 import Image from 'next/image'
-import { FaFlag, FaHeart, FaUniversity } from 'react-icons/fa'
+import { FaFlag, FaHeart } from 'react-icons/fa'
 import { IoLanguageSharp, IoSchoolSharp } from 'react-icons/io5'
 
 type Props = {
@@ -24,7 +24,7 @@ function General({ selectedLanguage }: Props) {
           alt="PMA"
           width={95}
           height={95}
-          className="w-24 h-24 rounded-full shadow-sm mx-4"
+          className="w-24 h-24 rounded-full shadow-md mx-4"
         />
         <div className="flex flex-col items-center md:items-start text-center md:text-start gap-1">
           <h1 className="text-2xl font-semibold mb-2">
@@ -40,15 +40,6 @@ function General({ selectedLanguage }: Props) {
                 selectedLanguage as keyof typeof ProfileDetailsList.description
               ]
             }
-          </p>
-          <p className="text-base text-muted-foreground italic">
-            "
-            {
-              ProfileDetailsList.quote[
-                selectedLanguage as keyof typeof ProfileDetailsList.quote
-              ]
-            }
-            " - {ProfileDetailsList.quote_by}
           </p>
         </div>
       </section>
@@ -133,7 +124,7 @@ function General({ selectedLanguage }: Props) {
           </ul>
         </div>
         {/* Education */}
-        <div className="bg-card  p-4 shadow-md rounded-md">
+        <div className="col-span-1 md:col-span-2 bg-card p-4 shadow-md rounded-md">
           <div className="flex items-center gap-2">
             <IoSchoolSharp className="text-primary" />
             <h2 className="flex items-center">
@@ -184,6 +175,18 @@ function General({ selectedLanguage }: Props) {
             ))}
           </ol>
         </div>
+      </div>
+      {/* Quote */}
+      <div className="w-full text-center">
+        <p className="text-sm text-muted-foreground italic">
+          "
+          {
+            ProfileDetailsList.quote[
+              selectedLanguage as keyof typeof ProfileDetailsList.quote
+            ]
+          }
+          " - {ProfileDetailsList.quote_by}
+        </p>
       </div>
     </div>
   )

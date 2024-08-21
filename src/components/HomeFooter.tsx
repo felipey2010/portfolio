@@ -8,7 +8,7 @@ function HomeFooter() {
   const { language } = useLanguage()
 
   return (
-    <div className="w-full min-h-6 absolute bottom-0 flex items-center justify-between gap-4 text-sm px-2">
+    <div className="w-full min-h-6 bg-card z-20 absolute bottom-0 flex items-center justify-between gap-4 text-sm px-4">
       <div>
         <h2 className="font-normal">
           {

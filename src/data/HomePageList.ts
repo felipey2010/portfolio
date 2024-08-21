@@ -11,8 +11,8 @@ export const HomePageList = {
     pt: 'Desenvolvedor Web Entusiasmado',
   },
   description: {
-    en: `I'm dedicated to crafting innovative and user-centric digital experiences. With a keen eye for design and a strong foundation in programming, I transform ideas into engaging online solutions. \nMy goal is to create solutions that not only look stunning but also deliver exceptional functionality and performance.`,
-    pt: `Estou dedicado a criar experiências digitais inovadoras e centradas no usuário. Com um olhar aguçado para design e uma base sólida em programação, transformo ideias em soluções online envolventes. \nMeu objetivo é criar soluções que não apenas tenham uma aparência impressionante, mas também ofereçam funcionalidade e desempenho excepcionais.`,
+    en: `I'm dedicated to <strong>crafting innovative</strong> and <strong>user-centric digital experiences</strong>. With a keen eye for design and a strong foundation in programming, I transform ideas into engaging online solutions. <br/>My goal is to create solutions that not only look <strong>stunning</strong> but also deliver exceptional <strong>functionality</strong> and <strong>performance</strong>.`,
+    pt: `Estou dedicado a <strong>criar experiências digitais inovadoras</strong> e <strong>centradas no usuário</strong>. Com um olhar aguçado para design e uma base sólida em programação, transformo ideias em soluções online envolventes. <br/>Meu objetivo é criar soluções que não apenas tenham uma <strong>aparência impressionante</strong>, mas também ofereçam <strong>funcionalidade</strong> e <strong>desempenho excepcionais</strong>.`,
   },
   button: {
     contactMe: {

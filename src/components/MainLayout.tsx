@@ -8,7 +8,7 @@ function MainLayout({ children }: { children: ReactNode }) {
     <div className="w-full min-h-screen p-8 flex items-center justify-center bg-background text-foreground transition-all duration-500 ease-in-out">
       <DraggableContainer>
         <Navbar />
-        <div className="w-full flex flex-1 flex-col p-2 overflow-auto">
+        <div className="w-full flex flex-1 flex-col p-2 overflow-hidden relative">
           {children}
         </div>
       </DraggableContainer>

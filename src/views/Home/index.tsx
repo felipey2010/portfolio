@@ -2,6 +2,7 @@
 import CVDownloader from '@/components/CVDownloader'
 import HomeFooter from '@/components/HomeFooter'
 import SEO from '@/components/SEO'
+import TechStack from '@/components/TechStack'
 import { Button } from '@/components/ui/button'
 import { HomePageList } from '@/data/HomePageList'
 import { profilePic } from '@/data/Images'
@@ -16,17 +17,17 @@ function HomeView() {
   return (
     <>
       <SEO title="" description="Página inicial" />
-      <div className="w-full h-full flex flex-1 flex-col items-center py-4 relative">
+      <div className="w-full h-full flex flex-1 flex-col items-center py-4 overflow-y-auto">
         <div className="w-full flex flex-col space-y-6 mb-14">
           {/* Image and status */}
           <div className="w-full flex flex-col items-center gap-2">
-            <Image
+            {/* <Image
               src={profilePic}
               alt="PMA"
               width={95}
               height={95}
               className="rounded-full shadow-sm"
-            />
+            /> */}
             <span className="flex items-center gap-4 border border-border bg-border py-0.5 px-2 rounded-xl">
               <span
                 className={cn(
@@ -68,13 +69,15 @@ function HomeView() {
           </div>
           {/* Description */}
           <div className="w-full flex items-center justify-center px-16">
-            <h2 className="text-foreground whitespace-pre-wrap text-center">
-              {
-                HomePageList.description[
-                  language as keyof typeof HomePageList.description
-                ]
-              }
-            </h2>
+            <h2
+              className="text-foreground whitespace-pre-wrap text-center"
+              dangerouslySetInnerHTML={{
+                __html:
+                  HomePageList.description[
+                    language as keyof typeof HomePageList.description
+                  ],
+              }}
+            ></h2>
           </div>
           {/* Buttons */}
           <div className="w-full flex items-center justify-center gap-4">
@@ -93,6 +96,7 @@ function HomeView() {
               }
             />
           </div>
+          <TechStack className="opacity-60" />
         </div>
         {/* Footer */}
         <HomeFooter />
