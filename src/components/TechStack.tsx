@@ -1,5 +1,8 @@
 import {
+  CSS,
   FramerMotion,
+  Github,
+  HTML,
   Java,
   Maven,
   NextJS,
@@ -17,13 +20,16 @@ function TechStack({ className }: { className?: string }) {
     Java,
     NodeJS,
     Springboot,
+    HTML,
+    CSS,
     TailwindCSS,
     FramerMotion,
     PostgreSQL,
     Maven,
+    Github,
   ]
   return (
-    <div className="relative flex w-full items-center justify-center overflow-hidden bg-card">
+    <div className="relative flex w-full items-center justify-center overflow-hidden">
       <Marquee pauseOnHover>
         {techStackArray.map((Tech, index) => (
           <div

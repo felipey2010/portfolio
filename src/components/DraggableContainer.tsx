@@ -11,7 +11,7 @@ function DraggableContainer({ children }: { children: ReactNode }) {
 
   return (
     <motion.div
-      className="w-full md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl h-full min-h-[630px] max-h-[calc(100dvh-100px)] rounded-xl border border-border bg-card text-card-foreground shadow-sm flex flex-col items-center"
+      className="w-full md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl h-[calc(100vh-100px)] sm:h-auto min-h-[630px] max-h-[calc(100dvh-100px)] md:max-h-[800px] rounded-xl border border-border shadow-sm flex flex-col items-center overflow-hidden"
       drag
       dragConstraints={{ top: 0, bottom: 0, right: 0, left: 0 }}
       dragElastic={0.9}

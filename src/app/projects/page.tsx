@@ -1,5 +1,7 @@
+import ProjectsView from '@/views/Projects'
+
 function ProjectsPage() {
-  return <div>Projects Page</div>;
+  return <ProjectsView />
 }
 
-export default ProjectsPage;
+export default ProjectsPage

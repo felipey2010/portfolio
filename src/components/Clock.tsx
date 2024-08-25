@@ -25,8 +25,8 @@ export default function Clock() {
 
   return (
     <div className="flex items-center gap-1 text-foreground">
-      <IoTimeOutline className="w-4 h-4" />
-      <p className=" text-sm font-normal">{time}</p>
+      <IoTimeOutline className="w-3 h-3" />
+      <p className=" text-xs font-normal">{time}</p>
     </div>
   )
 }

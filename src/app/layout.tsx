@@ -24,7 +24,7 @@ export default function RootLayout({
         className={cn(
           poppins.className,
           source_code_pro.className,
-          'antialiased overflow-hidden'
+          'antialiased'
         )}
         suppressHydrationWarning={true}
       >

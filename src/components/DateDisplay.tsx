@@ -42,8 +42,8 @@ function DateDisplay() {
           size="sm"
           className="flex items-center gap-1 text-foreground bg-transparent border-none shadow-none p-0 hover:bg-transparent"
         >
-          <PiCalendarDotsThin className="w-4 h-4" />
-          <p className="min-w-fit text-sm flex items-center font-normal">{`${date.day.toString().padStart(2, '0')}-${date.month.toString().padStart(2, '0')}-${date.year}`}</p>
+          <PiCalendarDotsThin className="w-3 h-3" />
+          <p className="min-w-fit text-xs flex items-center font-normal">{`${date.day.toString().padStart(2, '0')}-${date.month.toString().padStart(2, '0')}-${date.year}`}</p>
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">

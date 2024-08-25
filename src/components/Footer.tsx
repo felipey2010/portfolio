@@ -4,12 +4,12 @@ import Clock from './Clock'
 import DateDisplay from './DateDisplay'
 import { useLanguage } from '@/Providers/LanguageProvider'
 
-function HomeFooter() {
+function Footer() {
   const { language } = useLanguage()
 
   return (
-    <div className="w-full min-h-6 bg-card z-20 absolute bottom-0 flex items-center justify-between gap-4 text-sm px-4">
-      <div>
+    <div className="w-full min-h-6 bg-card flex items-center justify-center sm:justify-between gap-4 text-xs px-6">
+      <div className="hidden sm:block">
         <h2 className="font-normal">
           {
             FooterList.rightReserved[
@@ -35,4 +35,4 @@ function HomeFooter() {
   )
 }
 
-export default HomeFooter
+export default Footer

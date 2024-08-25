@@ -1,3 +1,4 @@
+import { Github, Linkedin, Mail, X } from 'lucide-react'
 import {
   BsBriefcase,
   BsChatRightText,
@@ -5,18 +6,18 @@ import {
   BsPersonVcard,
 } from 'react-icons/bs'
 import { APP_ROUTES } from './Routes'
-import exp from 'constants'
 
 const ABOUT_PAGE = APP_ROUTES.ABOUT + '?tab='
 
 export const AboutSidebarList = [
   {
     label: {
-      en: 'General',
-      pt: 'Geral',
+      en: 'Profile',
+      pt: 'Perfil',
     },
     href: APP_ROUTES.ABOUT,
     icon: BsPersonVcard,
+    activeTab: null,
   },
   {
     label: {
@@ -25,6 +26,7 @@ export const AboutSidebarList = [
     },
     href: ABOUT_PAGE + 'experience',
     icon: BsBriefcase,
+    activeTab: 'experience',
   },
   {
     label: {
@@ -33,6 +35,7 @@ export const AboutSidebarList = [
     },
     href: ABOUT_PAGE + 'skills',
     icon: BsMagic,
+    activeTab: 'skills',
   },
   {
     label: {
@@ -41,6 +44,7 @@ export const AboutSidebarList = [
     },
     href: ABOUT_PAGE + 'contact',
     icon: BsChatRightText,
+    activeTab: 'contact',
   },
 ]
 
@@ -160,7 +164,7 @@ export const HobbyList = {
       pt: 'Programação',
     },
     {
-      en: 'Nadar',
+      en: 'Swimming',
       pt: 'Natação',
     },
     {
@@ -180,8 +184,8 @@ export const HobbyList = {
 
 export const AboutPageNotFoundList = {
   label: {
-    en: 'Not Found',
-    pt: 'Não encontrado',
+    en: 'Page Not Found',
+    pt: 'Página Não encontrada',
   },
   title: {
     en: 'Oops...Page not found',
@@ -213,33 +217,44 @@ export const ProfileDetailsList = {
   quote_by: 'Booker T. Washington',
 }
 
-export const AreaOfExpertiseList = {
-  label: {
-    en: 'Area of Expertise',
-    pt: 'Área de atuação',
-  },
-  areas: [
-    {
-      en: 'Web Development',
-      pt: 'Desenvolvimento Web',
-    },
-  ],
-}
-
 export const WorkExperienceList = {
+  title: {
+    en: 'My Experience',
+    pt: 'Minha Experiência',
+  },
+  description: {
+    en: 'A little showcase of my journey so far as a developer',
+    pt: 'Uma pequena mostra da minha jornada até agora como desenvolvedor',
+  },
   label: {
     en: 'Work Experience',
     pt: 'Experiência profissional',
+  },
+  areaOfExpertise: {
+    label: {
+      en: 'Area of Expertise',
+      pt: 'Área de atuação',
+    },
+    areas: [
+      {
+        en: 'Web Development',
+        pt: 'Desenvolvimento Web',
+      },
+    ],
   },
   responsibilitiesTitle: {
     en: 'Responsibilities',
     pt: 'Responsabilidades',
   },
+  experienceTitle: {
+    en: 'Acquired experience',
+    pt: 'Experiência adquirida',
+  },
   experiences: [
     {
       position: {
         en: 'Internship - English teacher',
-        pt: 'PEstágio - rofessor de inglês',
+        pt: 'Estágio - Professor de inglês',
       },
       company: {
         en: 'NUCELE',
@@ -300,7 +315,7 @@ export const WorkExperienceList = {
       experiences: [
         {
           en: 'Problem solving (troubleshooting)',
-          pt: 'Resolução de problemas (resolução de problemas)',
+          pt: 'Resolução de problemas (troubleshooting)',
         },
         {
           en: 'Joomla CMS',
@@ -423,12 +438,8 @@ export const WorkExperienceList = {
           pt: 'Levantar requisitos de projetos',
         },
         {
-          en: 'Structure projects',
-          pt: 'Estruturar projetos',
-        },
-        {
-          en: 'Implement projects',
-          pt: 'Implementar projetos',
+          en: 'Structure and implement projects',
+          pt: 'Estruturar e implementar projetos',
         },
         {
           en: 'Assistance to the clients',
@@ -463,4 +474,217 @@ export const WorkExperienceList = {
       ],
     },
   ],
+}
+
+export const TechnologiesList = {
+  label: {
+    en: 'Technologies',
+    pt: 'Tecnologias',
+  },
+  description: {
+    en: 'The list of some of the technologies I work with',
+    pt: 'A lista de algumas das tecnologias com que eu trabalho',
+  },
+  technologies: [
+    {
+      name: 'Javascript ( React JS, Next JS)',
+    },
+    {
+      name: 'Java',
+    },
+    {
+      name: 'Node JS',
+    },
+    {
+      name: 'PostgreSQL',
+    },
+    {
+      name: 'Tomcat & JBoss/Wildfly',
+    },
+    {
+      name: 'Git',
+    },
+    {
+      name: 'Maven',
+    },
+  ],
+}
+
+export const SkillsList = {
+  title: {
+    en: 'Skills',
+    pt: 'Habilidades',
+  },
+  description: {
+    en: 'When it comes to skills, I have just a few in mind. Feel free to play around with them',
+    pt: 'Quando se trata de habilidades, eu tenho apenas poucas em mente. Sinta-se à vontade para brincar com elas',
+  },
+  skills: [
+    {
+      title: {
+        en: 'Agile Methodology',
+        pt: 'Metodologia ágil',
+      },
+      description: {
+        en: 'A project management approach that emphasizes flexibility, collaboration, and customer satisfaction.',
+        pt: 'Uma abordagem de gerenciamento de projetos que enfatiza a flexibilidade, a colaboração e a satisfação do cliente.',
+      },
+    },
+    {
+      title: {
+        en: 'Attention to details',
+        pt: 'Atenção aos detalhes',
+      },
+      description: {
+        en: 'Aim at achieving precise results according to the project requirements.',
+        pt: 'Objetiva-se a atingir resultados precisos de acordo com as exigências do projeto.',
+      },
+    },
+    {
+      title: {
+        en: 'Continuous learning',
+        pt: 'Aprendizagem contínua',
+      },
+      description: {
+        en: 'Enthusiastic about quickly understanding new technologies to keep up to date.',
+        pt: 'Entusiasta em compreender rapidamente novas tecnologias para manter atualizado.',
+      },
+    },
+    {
+      title: {
+        en: 'Team and individual work',
+        pt: 'Trabalho em equipe e individual',
+      },
+      description: {
+        en: 'Ability to adapt easily to both work in a team and individually.',
+        pt: 'habilidade de adaptar facilmente tanto ao trabalho em equipe como individualmente.',
+      },
+    },
+    {
+      title: {
+        en: 'Creativity',
+        pt: 'Criatividade',
+      },
+      description: {
+        en: 'Ability to find unique solutions to problems and for designing solutions that are both functional and visually appealing.',
+        pt: 'habilidade de encontrar soluções únicas para problemas e de projetar soluções que são funcionais e visualmente atraentes.',
+      },
+    },
+  ],
+}
+
+export const ContactList = {
+  title: {
+    en: 'Contact Me',
+    pt: 'Contate-me',
+  },
+  subtitle: {
+    en: 'Get in Touch',
+    pt: 'Entre em Contato',
+  },
+  description: {
+    en: 'Feel free to reach out through any of the following channels or use the contact form for potential collaborations or inquiries.',
+    pt: 'Sinta-se à vontade para entrar em contato por qualquer um dos canais a seguir ou usar o formulário de contato para possíveis colaborações ou consultas.',
+  },
+  contacts: [
+    {
+      name: 'Email',
+      value: 'mailto:pakpanyi@gmail.com',
+      type: 'text',
+      icon: Mail,
+    },
+    {
+      name: 'LinkedIn',
+      value: 'https://www.linkedin.com/in/philip-mahama-akpanyi',
+      type: 'link',
+      icon: Linkedin,
+    },
+    {
+      name: 'Github',
+      value: 'https://github.com/felipey2010',
+      type: 'link',
+      icon: Github,
+    },
+    {
+      name: 'X',
+      value: 'https://twitter.com/felipey2010',
+      type: 'link',
+      icon: X,
+    },
+  ],
+}
+
+export const GENERAL_PAGE_INFO = {
+  title: {
+    en: 'Profile',
+    pt: 'Perfil',
+  },
+  description: {
+    en: 'Get to know more about my background, including education, languages spoken, country of origin, and hobbies.',
+    pt: 'Saiba mais sobre o meu perfil, incluindo educação, idiomas falados, país de origem e hobbies.',
+  },
+  keywords: {
+    en: 'profile, background, education, languages, hobbies, country',
+    pt: 'perfil, formação, educação, idiomas, hobbies, país',
+  },
+}
+
+export const EXPERIENCE_PAGE_INFO = {
+  title: {
+    en: 'Experience',
+    pt: 'Experiência',
+  },
+  description: {
+    en: 'Discover my professional experience, areas of expertise, and the technologies I specialize in.',
+    pt: 'Conheça a minha experiência profissional, áreas de especialização e as tecnologias com as quais trabalho.',
+  },
+  keywords: {
+    en: 'experience, work experience, expertise, technologies, professional background',
+    pt: 'experiência, experiência profissional, especialização, tecnologias, histórico profissional',
+  },
+}
+
+export const SKILLS_PAGE_INFO = {
+  title: {
+    en: 'Skills',
+    pt: 'Habilidades',
+  },
+  description: {
+    en: 'Explore the soft and technical skills that I bring to the table.',
+    pt: 'Explore as habilidades técnicas e interpessoais que possuo.',
+  },
+  keywords: {
+    en: 'skills, soft skills, technical skills, abilities, strengths',
+    pt: 'habilidades, habilidades interpessoais, habilidades técnicas, competências, pontos fortes',
+  },
+}
+
+export const CONTACT_PAGE_INFO = {
+  title: {
+    en: 'Contact',
+    pt: 'Contato',
+  },
+  description: {
+    en: 'Get in touch with me for potential collaborations or inquiries.',
+    pt: 'Entre em contato comigo para possíveis colaborações ou perguntas.',
+  },
+  keywords: {
+    en: 'contact, get in touch, email, phone, inquiries, collaborations',
+    pt: 'contato, entre em contato, e-mail, telefone, perguntas, colaborações',
+  },
+}
+
+export const NOT_FOUND_PAGE_INFO = {
+  title: {
+    en: 'Page Not Found',
+    pt: 'Página Não encontrada',
+  },
+  description: {
+    en: `Our digital librarian has misplaced your requested page. \nFear not, we are on the case!`,
+    pt: `Nosso bibliotecário digital perdeu a página solicitada. \nNão tema, estamos cuidando do caso!`,
+  },
+  keywords: {
+    en: '',
+    pt: '',
+  },
 }
