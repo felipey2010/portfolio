@@ -1,8 +1,21 @@
+import { Card, CardHeader, CardContent } from '@/components/ui/card'
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '@/components/ui/hover-card'
 import { ProjectPageList, ProjectsList } from '@/data/ProjectsList'
 import { CategoryItemType, CategoryType } from '@/types'
 import { ChevronDown, ChevronRight, File, Folder } from 'lucide-react'
-import Link from 'next/link'
 import { useState } from 'react'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTrigger,
+  DialogTitle,
+} from '@/components/ui/dialog'
+import ProjectDisplay from './ProjectDisplay'
 
 export default function ProjectExplorer({
   language = 'en',
@@ -10,7 +23,6 @@ export default function ProjectExplorer({
   language: string
 }) {
   const [openCategories, setOpenCategory] = useState<string[]>([])
-  const [currentPath, setCurrentPath] = useState<string[]>([])
 
   const toggleCategory = (categoryId: string) => {
     setOpenCategory((prev) =>
@@ -18,15 +30,6 @@ export default function ProjectExplorer({
         ? prev.filter((id) => id !== categoryId)
         : [...prev, categoryId]
     )
-
-    const folder = ProjectsList.find((category) => category.id === categoryId)
-    if (folder) {
-      setCurrentPath((prev) =>
-        prev.includes(folder.name.en)
-          ? prev.filter((name) => name !== folder.name.en)
-          : [...prev, folder.name.en]
-      )
-    }
   }
 
   return (
@@ -102,21 +105,6 @@ const FolderItem = ({
   )
 }
 
-const Breadcrumb = ({ path }: { path: string[] }) => (
-  <nav className="flex mb-2" aria-label="Breadcrumb">
-    <ol className="inline-flex items-center space-x-1 md:space-x-3">
-      {path.map((item, index) => (
-        <li key={index}>
-          <div className="flex items-center">
-            <ChevronRight className="w-5 h-5 text-gray-400" />
-            <span className="ml-1 text-gray-500 md:ml-2">{item}</span>
-          </div>
-        </li>
-      ))}
-    </ol>
-  </nav>
-)
-
 const CategoryItem = ({
   item,
   level,
@@ -129,12 +117,45 @@ const CategoryItem = ({
   const paddingLeft = `${level * 1.5}rem`
 
   return (
-    <div
-      className="w-fit flex items-center py-2 px-4 hover:underline hover:cursor-pointer mt-1"
-      style={{ paddingLeft }}
-    >
-      <File className="w-4 h-4 mr-2 text-blue-500" />
-      <p className="text-sm">{item.name[language as keyof typeof item.name]}</p>
-    </div>
+    <Dialog>
+      <HoverCard>
+        <HoverCardTrigger asChild>
+          <DialogTrigger asChild>
+            <div
+              className="w-fit flex items-center py-2 px-4 hover:underline hover:cursor-pointer mt-1"
+              style={{ paddingLeft }}
+            >
+              <File className="w-4 h-4 mr-2 text-blue-500" />
+              <p className="text-sm">
+                {item.name[language as keyof typeof item.name]}
+              </p>
+            </div>
+          </DialogTrigger>
+        </HoverCardTrigger>
+        <HoverCardContent className="p-0 rounded-xl shadow-none border-none">
+          <Card className="p-0 shadow-sm border-border divide-y divide-border">
+            <CardHeader className="p-3">
+              <p className="text-sm">
+                {item.name[language as keyof typeof item.name]}
+              </p>
+            </CardHeader>
+            <CardContent className="p-4">
+              <p className="text-sm">
+                {item.description[language as keyof typeof item.description]}
+              </p>
+            </CardContent>
+          </Card>
+        </HoverCardContent>
+      </HoverCard>
+      <DialogContent className="border-border ">
+        <DialogTitle className="sr-only">
+          {item.name[language as keyof typeof item.name]}
+        </DialogTitle>
+        <DialogDescription className="sr-only">
+          {item.description[language as keyof typeof item.description]}
+        </DialogDescription>
+        <ProjectDisplay project={item} language={language} />
+      </DialogContent>
+    </Dialog>
   )
 }

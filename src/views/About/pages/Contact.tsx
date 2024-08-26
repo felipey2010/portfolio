@@ -34,7 +34,7 @@ function Contact({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
         </h1>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
+          <div className="text-center md:text-left">
             <h2 className="text-xl font-semibold mb-4">
               {
                 ContactList.subtitle[
@@ -50,7 +50,7 @@ function Contact({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
               }
             </p>
 
-            <div className="space-y-3">
+            <div className="space-y-3 flex flex-col items-center md:items-start">
               {ContactList.contacts.map((contact, index) => (
                 <Link
                   href={contact.value}
@@ -65,7 +65,7 @@ function Contact({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-4">
+            <h2 className="text-xl font-semibold mb-4 text-center md:text-left">
               {
                 ContactFormText.send_message[
                   selectedLanguage as keyof typeof ContactFormText.send_message

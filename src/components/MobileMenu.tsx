@@ -27,7 +27,7 @@ function MobileMenu() {
         <MenubarTrigger name="Menu" className="text-foreground font-normal">
           Menu <MdKeyboardArrowDown className="ml-2" />
         </MenubarTrigger>
-        <MenubarContent>
+        <MenubarContent className="border-border">
           {MobileMenuList.map((menu, index) => {
             const mennuName = menu.name[language as keyof typeof menu.name]
             return menu.subitems ? (
@@ -35,7 +35,7 @@ function MobileMenu() {
                 <MenubarSubTrigger className="text-foreground font-normal">
                   {mennuName}
                 </MenubarSubTrigger>
-                <MenubarSubContent>
+                <MenubarSubContent className="border-border">
                   {menu.subitems.map((subitem, index) => (
                     <MenubarItem
                       key={`mobile-menu-subitem-${index}`}

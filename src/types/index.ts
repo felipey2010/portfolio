@@ -17,7 +17,7 @@ export type CategoryItemType = {
     pt: string
   }
   image: string
-  tags: never[]
+  tags: string[]
   demoLink: string
   githubLink: string
 }

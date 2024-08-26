@@ -1,11 +1,11 @@
 'use client'
-import { useSearchParams } from 'next/navigation'
-import General from './pages/General'
 import { useLanguage } from '@/Providers/LanguageProvider'
-import NotFound from './pages/NotFound'
-import Experience from './pages/Experience'
-import Skills from './pages/Skills'
+import { useSearchParams } from 'next/navigation'
 import Contact from './pages/Contact'
+import Experience from './pages/Experience'
+import General from './pages/General'
+import NotFound from './pages/NotFound'
+import Skills from './pages/Skills'
 
 function AboutView() {
   const searchParam = useSearchParams()

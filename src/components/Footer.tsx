@@ -1,8 +1,8 @@
 'use client'
 import { FooterList } from '@/data/FooterList'
+import { useLanguage } from '@/Providers/LanguageProvider'
 import Clock from './Clock'
 import DateDisplay from './DateDisplay'
-import { useLanguage } from '@/Providers/LanguageProvider'
 
 function Footer() {
   const { language } = useLanguage()

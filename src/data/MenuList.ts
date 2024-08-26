@@ -44,7 +44,7 @@ export const ResourceList = {
         en: 'Blog',
         pt: 'Blog',
       },
-      href: '/resources',
+      href: '/blog',
       description: {
         en: 'Random ideas, tools and resources I found',
         pt: 'Ideias, ferramentas e recursos que encontrei',

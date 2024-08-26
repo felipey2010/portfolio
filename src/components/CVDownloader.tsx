@@ -14,7 +14,7 @@ function CVDownloader({ buttonText = 'Download CV' }: { buttonText?: string }) {
       onClick={openFile}
       variant="ghost"
       size="lg"
-      className="border border-border"
+      className="border border-border w-full sm:w-auto"
       borderStyle="right-rounded"
     >
       <PiDownloadSimpleFill className="mr-2" /> {buttonText}

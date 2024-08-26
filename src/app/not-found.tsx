@@ -1,10 +1,10 @@
-import { sad } from "@/data/Images";
-import Image from "next/image";
-import Link from "next/link";
+import { sad } from '@/data/Images'
+import Image from 'next/image'
+import Link from 'next/link'
 
-const TITLE = "Oops! Algo deu errado...";
-const DESCRIPTION = `Essa página está escondida em um labirinto de links quebrados. \nBoa sorte encontrando a saída!`;
-const BUTTON_TEXT = "Página inicial";
+const TITLE = 'Oops! Algo deu errado...'
+const DESCRIPTION = `Essa página está escondida em um labirinto de links quebrados. \nBoa sorte encontrando a saída!`
+const BUTTON_TEXT = 'Página inicial'
 
 function Custom404Page() {
   return (
@@ -19,19 +19,19 @@ function Custom404Page() {
             className="w-full max-w-[350px]"
           />
         </div>
-        <h1 className="text-3xl text-center text-primary">{TITLE}</h1>
-        <h1 className="text-lg text-center text-muted-foreground whitespace-pre-wrap">
+        <h1 className="text-2xl text-center text-primary">{TITLE}</h1>
+        <h1 className="text-base text-center text-muted-foreground whitespace-pre-wrap">
           {DESCRIPTION}
         </h1>
         <Link
           href="/"
-          className="text-muted-foreground border border-primary hover:bg-primary hover:text-white focus:bg-primary focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2"
+          className="text-muted-foreground border border-primary hover:bg-primary hover:text-white focus:bg-primary focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-200 ease-in-out"
         >
           {BUTTON_TEXT}
         </Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default Custom404Page;
+export default Custom404Page

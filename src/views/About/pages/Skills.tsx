@@ -58,7 +58,7 @@ function Skills({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
           </p>
         </div>
         <hr className="border-border" />
-        <div className="w-full flex flex-1 min-h-64 relative mx-auto pt-6 px-4 overflow-hidden">
+        <div className="w-full flex flex-1 min-h-64 relative mx-auto pt-6 md:px-4 overflow-hidden">
           <PlayField
             skills={SkillsList.skills}
             selectedLanguage={selectedLanguage}

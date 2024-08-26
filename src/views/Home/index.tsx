@@ -55,7 +55,7 @@ function HomeView() {
           </span>
         </div>
         {/* Description */}
-        <div className="w-full flex items-center justify-center px-16">
+        <div className="w-full flex items-center justify-center px-2 md:px-16">
           <h2 className="w-full sm:w-auto text-foreground text-center">
             {
               HomePageList.description[
@@ -65,8 +65,13 @@ function HomeView() {
           </h2>
         </div>
         {/* Buttons */}
-        <div className="w-full flex items-center justify-center gap-4">
-          <Button variant="default" size="lg" borderStyle="left-rounded">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button
+            variant="default"
+            size="lg"
+            borderStyle="left-rounded"
+            className="w-full sm:w-auto"
+          >
             {
               HomePageList.button.contactMe[
                 language as keyof typeof HomePageList.button.contactMe
