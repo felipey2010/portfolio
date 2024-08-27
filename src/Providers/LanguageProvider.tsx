@@ -36,11 +36,6 @@ export default function LanguageProvider({
     localStorage.setItem('dev-p-lang', language)
   }
 
-  const LanguageContextValue = {
-    language,
-    handleLanguageChange,
-  }
-
   return (
     <LanguageContext.Provider
       value={{

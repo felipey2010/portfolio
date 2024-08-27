@@ -63,7 +63,7 @@ function ProjectDisplay({ project, language }: Props) {
           asChild
           variant="outline"
           size="sm"
-          disabled={project.demoLink.length > 2}
+          disabled={project.demoLink.length < 2}
         >
           <Link href={project.demoLink}>
             <ExternalLink className="mr-2 h-4 w-4" />
@@ -74,7 +74,7 @@ function ProjectDisplay({ project, language }: Props) {
           asChild
           variant="outline"
           size="sm"
-          disabled={project.githubLink.length > 2}
+          disabled={project.githubLink.length < 2}
         >
           <Link href={project.githubLink} target="_blank">
             <Github className="mr-2 h-4 w-4" />
