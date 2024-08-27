@@ -58,21 +58,6 @@ export const ProjectsList = [
         demoLink: '#',
         githubLink: '#',
       },
-      {
-        id: 'p1.2',
-        name: {
-          en: 'E-commerce Site',
-          pt: 'Site de E-commerce',
-        },
-        description: {
-          en: 'A website for an online store selling products.',
-          pt: 'Um site para uma loja online vendendo produtos.',
-        },
-        image: '',
-        tags: [],
-        demoLink: '#',
-        githubLink: '#',
-      },
     ],
   },
   {
@@ -96,7 +81,7 @@ export const ProjectsList = [
           en: 'A mathematics game app intended to help enhance mathematical skills.',
           pt: 'Um jogo de matemática destinado a ajudar a melhorar as habilidades matemáticas.',
         },
-        image: '/assets/jogo_educacivo.png',
+        image: '/assets/jogo_educativo.png',
         tags: ['React JS', 'CSS', 'Axios'],
         demoLink: 'https://jogo-educativo.vercel.app/',
         githubLink: 'https://github.com/felipey2010/jogo-educativo',
@@ -119,6 +104,21 @@ export const ProjectsList = [
       {
         id: 'p2.3',
         name: {
+          en: 'Random Quotes App',
+          pt: 'Aplicação de Quotes Aleatórias',
+        },
+        description: {
+          en: 'A web app that displays random quotes.',
+          pt: 'Uma aplicação web que exibe citações aleatórias.',
+        },
+        image: '/assets/random_quotes.png',
+        tags: ['React JS', 'canvas', 'Axios', 'Local Storage'],
+        demoLink: 'https://random-quote-web-app.vercel.app/',
+        githubLink: 'https://github.com/felipey2010/random_quote_web_app',
+      },
+      {
+        id: 'p2.4',
+        name: {
           en: 'Contact List App',
           pt: 'Lista de Contatos',
         },
@@ -130,6 +130,21 @@ export const ProjectsList = [
         tags: ['React JS', 'CSS', 'React Hook Forms', 'Local Storage'],
         demoLink: 'https://contact-list-webapp.vercel.app/',
         githubLink: 'https://github.com/felipey2010/contact-list-app',
+      },
+      {
+        id: 'p2.5',
+        name: {
+          en: 'Visa card component',
+          pt: 'Componente de cartão de visa',
+        },
+        description: {
+          en: 'A component which displays a visa card with the ability to enter the card details.',
+          pt: 'Um componente que exibe um cartão de visa com a capacidade de inserir os detalhes do cartão.',
+        },
+        image: '/assets/visa_card.png',
+        tags: ['React JS', 'CSS'],
+        demoLink: 'https://visa-card.vercel.app/',
+        githubLink: 'https://github.com/felipey2010/visa-card',
       },
     ],
   },
