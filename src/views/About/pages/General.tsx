@@ -206,13 +206,13 @@ function General({ selectedLanguage = 'en' }: Props) {
         {/* Quote */}
         <div className="w-full text-center">
           <p className="text-sm text-muted-foreground italic">
-            "
+            &quot;
             {
               ProfileDetailsList.quote[
                 selectedLanguage as keyof typeof ProfileDetailsList.quote
               ]
             }
-            "
+            &quot;
           </p>
           <p className="text-sm text-muted-foreground italic">
             {ProfileDetailsList.quote_by}
