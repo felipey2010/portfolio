@@ -6,10 +6,12 @@ import { Button } from '@/components/ui/button'
 import { HomePageList } from '@/data/HomePageList'
 import { cn } from '@/lib/utils'
 import { useLanguage } from '@/Providers/LanguageProvider'
+import { useRouter } from 'next/navigation'
 import { RiSparkling2Fill } from 'react-icons/ri'
 
 function HomeView() {
   const { language } = useLanguage()
+  const router = useRouter()
 
   return (
     <>
@@ -71,6 +73,7 @@ function HomeView() {
             size="lg"
             borderStyle="left-rounded"
             className="w-full sm:w-auto"
+            onClick={() => router.push('/about?tab=contact')}
           >
             {
               HomePageList.button.contactMe[

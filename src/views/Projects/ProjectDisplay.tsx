@@ -9,7 +9,6 @@ import {
 } from '@/components/ui/card'
 import { ExternalLink, Github } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 type translationType = {
   en: string
@@ -29,6 +28,12 @@ type Props = {
 }
 
 function ProjectDisplay({ project, language }: Props) {
+  function openLink(link: string) {
+    if (link) {
+      window.open(link, '_blank')
+    }
+  }
+
   return (
     <Card className="flex flex-col justify-between overflow-hidden shadow-none bg-transparent border-none pt-4">
       <CardHeader className="p-0">
@@ -60,26 +65,22 @@ function ProjectDisplay({ project, language }: Props) {
       </CardContent>
       <CardFooter className="p-4 flex justify-between">
         <Button
-          asChild
           variant="outline"
           size="sm"
           disabled={project.demoLink.length < 2}
+          onClick={() => openLink(project.demoLink)}
         >
-          <Link href={project.demoLink}>
-            <ExternalLink className="mr-2 h-4 w-4" />
-            Demo
-          </Link>
+          <ExternalLink className="mr-2 h-4 w-4" />
+          Demo
         </Button>
         <Button
-          asChild
           variant="outline"
           size="sm"
           disabled={project.githubLink.length < 2}
+          onClick={() => openLink(project.githubLink)}
         >
-          <Link href={project.githubLink} target="_blank">
-            <Github className="mr-2 h-4 w-4" />
-            Code
-          </Link>
+          <Github className="mr-2 h-4 w-4" />
+          Code
         </Button>
       </CardFooter>
     </Card>

@@ -85,7 +85,7 @@ export default function ReportBug({ onClose, open, setOpen }: Props) {
                   ]
                 }
               </Button>
-              <Button type="submit">
+              <Button type="submit" disabled={true}>
                 {
                   ReportBugList.button.send[
                     language as keyof typeof ReportBugList.button.send

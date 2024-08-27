@@ -55,7 +55,7 @@ export const ProjectsList = [
         },
         image: '/assets/jogos_escolares.png',
         tags: ['spring-boot', 'java', 'postgresql', 'spring-security'],
-        demoLink: '#',
+        demoLink: 'https://sistemas.rr.gov.br/jogosescolares/',
         githubLink: '#',
       },
     ],
