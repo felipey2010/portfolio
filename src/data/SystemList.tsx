@@ -49,13 +49,25 @@ export const ContactFormText = {
     },
   },
   submission: {
-    title: {
-      en: 'Form submission',
-      pt: 'Envio de formulário',
+    success: {
+      title: {
+        en: 'Form submission',
+        pt: 'Envio de formulário',
+      },
+      description: {
+        en: 'Your message has been sent successfully. Thank you for contacting me!',
+        pt: 'Sua mensagem foi enviada com sucesso. Obrigado por entrar em contato comigo!',
+      },
     },
-    description: {
-      en: 'Your message has been sent successfully. Thank you for contacting me!',
-      pt: 'Seu mensagem foi enviada com sucesso. Obrigado por entrar em contato comigo!',
+    error: {
+      title: {
+        en: 'Error - Form submission',
+        pt: 'Erro - Envio de formulário',
+      },
+      description: {
+        en: 'Your message could not be sent. Please try again later.',
+        pt: 'Sua mensagem não pôde ser enviada. Por favor, tente novamente mais tarde.',
+      },
     },
   },
 }

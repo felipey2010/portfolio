@@ -1,8 +1,10 @@
 'use client'
 import { ContactFormText } from '@/data/SystemList'
+import { sendContactEmail } from '@/lib/actions'
 import { useLanguage } from '@/Providers/LanguageProvider'
 import { ContactFormSchema, ContactFormSchemaType } from '@/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { LoaderCircle } from 'lucide-react'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { Button } from '../ui/button'
@@ -17,11 +19,9 @@ import {
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 import { toast } from '../ui/use-toast'
-import { LoaderCircle } from 'lucide-react'
 
 function ContactForm() {
   const [loading, setLoading] = useState(false)
-  const [disabled, setDisabled] = useState(true)
   const { language: selectedLanguage } = useLanguage()
 
   const form = useForm<ContactFormSchemaType>({
@@ -35,20 +35,35 @@ function ContactForm() {
 
   const { control, handleSubmit, reset } = form
 
-  const onSubmit = (values: ContactFormSchemaType) => {
-    console.log(values)
+  const onSubmit = async (values: ContactFormSchemaType) => {
     setLoading(true)
-    toast({
-      title:
-        ContactFormText.submission.title[
-          selectedLanguage as keyof typeof ContactFormText.submission.title
-        ],
-      description:
-        ContactFormText.submission.description[
-          selectedLanguage as keyof typeof ContactFormText.submission.description
-        ],
-    })
-    reset()
+
+    try {
+      await sendContactEmail(values)
+      toast({
+        title:
+          ContactFormText.submission.success.title[
+            selectedLanguage as keyof typeof ContactFormText.submission.success.title
+          ],
+        description:
+          ContactFormText.submission.success.description[
+            selectedLanguage as keyof typeof ContactFormText.submission.success.description
+          ],
+      })
+      reset()
+    } catch (error) {
+      console.error(error)
+      toast({
+        title:
+          ContactFormText.submission.error.title[
+            selectedLanguage as keyof typeof ContactFormText.submission.error.title
+          ],
+        description:
+          ContactFormText.submission.error.description[
+            selectedLanguage as keyof typeof ContactFormText.submission.error.description
+          ],
+      })
+    }
     setLoading(false)
   }
 
@@ -58,7 +73,7 @@ function ContactForm() {
         <div className="space-y-2">
           <FormField
             control={control}
-            disabled={loading || disabled}
+            disabled={loading}
             name="name"
             render={({ field }) => (
               <FormItem>
@@ -90,7 +105,7 @@ function ContactForm() {
         <div className="space-y-2">
           <FormField
             control={control}
-            disabled={loading || disabled}
+            disabled={loading}
             name="email"
             render={({ field }) => (
               <FormItem>
@@ -123,7 +138,7 @@ function ContactForm() {
         <div className="space-y-2">
           <FormField
             control={control}
-            disabled={loading || disabled}
+            disabled={loading}
             name="message"
             render={({ field }) => (
               <FormItem>
@@ -152,7 +167,7 @@ function ContactForm() {
             )}
           />
         </div>
-        <Button type="submit" className="w-full" disabled={loading || disabled}>
+        <Button type="submit" className="w-full" disabled={loading}>
           {loading ? (
             <>
               <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />

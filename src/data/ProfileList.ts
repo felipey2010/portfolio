@@ -48,6 +48,10 @@ export const ReportBugList = {
       en: 'Send',
       pt: 'Enviar',
     },
+    sending: {
+      en: 'Sending...',
+      pt: 'Enviando...',
+    },
   },
   textArea: {
     en: 'Describe the bug',
@@ -62,6 +66,16 @@ export const ReportBugList = {
       description: {
         en: 'Thank you for your report!',
         pt: 'Obrigado por reportar o bug!',
+      },
+    },
+    error: {
+      title: {
+        en: 'Error - Bug report submission',
+        pt: 'Erro - Envio de relatório de bug',
+      },
+      description: {
+        en: 'Your bug report could not be sent. Please try again later.',
+        pt: 'O seu relatório de bug não pôde ser enviado. Por favor, tente novamente mais tarde.',
       },
     },
   },

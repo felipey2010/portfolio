@@ -6,4 +6,9 @@ export const ContactFormSchema = z.object({
   message: z.string().min(2).max(500),
 })
 
+export const BugReportSchema = z.object({
+  message: z.string().min(2).max(500),
+})
+
 export type ContactFormSchemaType = z.infer<typeof ContactFormSchema>
+export type BugReportSchemaType = z.infer<typeof BugReportSchema>
