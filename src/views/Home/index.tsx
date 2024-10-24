@@ -15,7 +15,7 @@ function HomeView() {
 
   return (
     <>
-      <SEO title="" description="Página inicial" />
+      <SEO title="Home" description="Página inicial" />
       <div className="w-full flex-col items-center py-4 space-y-6 mb-14">
         {/* Image and status */}
         <div className="w-full flex flex-col items-center gap-2">

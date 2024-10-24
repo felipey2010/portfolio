@@ -94,3 +94,38 @@ export const PageNotFoundList = {
     pt: '404, erro, página não encontrada, link quebrado, labirinto',
   },
 }
+
+export const PageInConstruction = {
+  header: {
+    en: 'Blog',
+    pt: 'Blog',
+  },
+  title: {
+    en: 'Coming Soon | Page Under Construction',
+    pt: 'Em Breve | Página em Construção',
+  },
+  description: {
+    en: (
+      <>
+        We&apos;re working hard to build something amazing for you.
+        <br />
+        Check back soon to see what we&apos;ve created!
+      </>
+    ),
+    pt: (
+      <>
+        Estamos trabalhando duro para construir algo incrível para você.
+        <br />
+        Volte em breve para ver o que criamos!
+      </>
+    ),
+  },
+  button: {
+    en: 'Return',
+    pt: 'Voltar',
+  },
+  keywords: {
+    en: '404, error, page not found, broken link, labyrinth',
+    pt: '404, erro, página não encontrada, link quebrado, labirinto',
+  },
+}

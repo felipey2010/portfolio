@@ -32,7 +32,7 @@ function ProjectsView() {
           ]
         }
       />
-      <div className="h-full flex flex-col items-center gap-4">
+      <div className="h-full flex flex-col items-center gap-4 px-3">
         {/* Page title */}
         <div className="flex flex-col text-center">
           <h1 className="text-2xl font-bold tracking-tighter">

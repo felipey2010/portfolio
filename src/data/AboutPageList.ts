@@ -429,8 +429,8 @@ export const WorkExperienceList = {
         pt: 'Roraima, Brasil',
       },
       period: {
-        en: 'March, 2022 - till you contract me',
-        pt: 'Março, 2022 - até você me contratar',
+        en: 'March, 2022 - present',
+        pt: 'Março, 2022 - atual',
       },
       responsibilities: [
         {
@@ -493,7 +493,7 @@ export const TechnologiesList = {
       name: 'Java (Spring framework)',
     },
     {
-      name: 'Node JS',
+      name: 'Node JS (REST APIs)',
     },
     {
       name: 'PostgreSQL',
@@ -557,7 +557,7 @@ export const SkillsList = {
       },
       description: {
         en: 'Ability to adapt easily to both work in a team and individually.',
-        pt: 'habilidade de adaptar facilmente tanto ao trabalho em equipe como individualmente.',
+        pt: 'Habilidade de adaptar facilmente tanto ao trabalho em equipe como individualmente.',
       },
     },
     {
@@ -567,7 +567,17 @@ export const SkillsList = {
       },
       description: {
         en: 'Ability to find unique solutions to problems and for designing solutions that are both functional and visually appealing.',
-        pt: 'habilidade de encontrar soluções únicas para problemas e de projetar soluções que são funcionais e visualmente atraentes.',
+        pt: 'Habilidade de encontrar soluções únicas para problemas e de projetar soluções que são funcionais e visualmente atraentes.',
+      },
+    },
+    {
+      title: {
+        en: 'Leadership',
+        pt: 'Liderança',
+      },
+      description: {
+        en: 'Possess skills in communication, decision-making, resolutions of problems, motivating, team and time management.',
+        pt: 'Possui habilidades em comunicação, tomada de decisão, resolução de problemas, motivação, gerenciamento de equipe e tempo.',
       },
     },
   ],
