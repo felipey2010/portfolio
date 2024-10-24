@@ -13,25 +13,18 @@ export const HomePageList = {
   description: {
     en: (
       <>
-        I&apos;m dedicated to <strong>crafting innovative</strong> and{' '}
-        <strong>user-centric digital experiences</strong>. With a keen eye for
-        design and a strong foundation in programming, I transform ideas into
-        engaging online solutions. <br />
-        My goal is to create solutions that not only look{' '}
-        <strong>stunning</strong> but also deliver exceptional{' '}
-        <strong>functionality</strong> and <strong>performance</strong>.
+        I&apos;m Ghanaian but currently based in Brazil. I have over 2 years of
+        experience in system development. Listening to music, watching
+        basketball, and playing badminton are my current favorite activities.
+        Programming is my passion, and I'm always eager to learn more.
       </>
     ),
     pt: (
       <>
-        Estou dedicado a <strong>criar experiências digitais inovadoras</strong>{' '}
-        e <strong>centradas no usuário</strong>. Com um olhar aguçado para
-        design e uma base sólida em programação, transformo ideias em soluções
-        online envolventes. <br />
-        Meu objetivo é criar soluções que não apenas tenham uma{' '}
-        <strong>aparência impressionante</strong>, mas também ofereçam{' '}
-        <strong>funcionalidade</strong> e{' '}
-        <strong>desempenho excepcionais</strong>.
+        Sou ganês, mas atualmente moro no Brasil. Tenho mais de 2 anos de
+        experiência em desenvolvimento de sistemas. Ouvir música, assistir
+        basquete e jogar badminton são minhas atividades favoritas no momento.
+        Programação é minha paixão e estou sempre ansioso para aprender mais.
       </>
     ),
   },

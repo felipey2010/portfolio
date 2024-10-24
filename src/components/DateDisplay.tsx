@@ -1,15 +1,18 @@
 'use client'
-import { useEffect, useState } from 'react'
-import { PiCalendarDotsThin } from 'react-icons/pi'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
-import { Calendar } from './ui/calendar'
+import { useLanguage } from '@/Providers/LanguageProvider'
+import { useEffect, useState } from 'react'
+import { PiCalendarDotsThin } from 'react-icons/pi'
 import { Button } from './ui/button'
+import { Calendar } from './ui/calendar'
+import { enUS, ptBR } from 'date-fns/locale'
 
 function DateDisplay() {
+  const { language } = useLanguage()
   const [date, setDate] = useState({
     day: 0,
     month: 0,
@@ -52,6 +55,7 @@ function DateDisplay() {
           selected={currentDate}
           onSelect={() => {}}
           initialFocus
+          locale={language === 'en' ? enUS : ptBR}
         />
       </PopoverContent>
     </Popover>

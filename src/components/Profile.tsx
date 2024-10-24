@@ -39,12 +39,12 @@ function Profile() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          {ProfileList.profile.map((profile) => (
+          {/* {ProfileList.profile.map((profile) => (
             <DropdownMenuItem key={profile.name.en}>
               {<profile.icon className="mr-2 h-4 w-4" />}
               {profile.name[language as keyof typeof profile.name]}
             </DropdownMenuItem>
-          ))}
+          ))} */}
           <DropdownMenuItem onClick={handleBugReportOpen}>
             {<ReportBugList.icon className="mr-2 h-4 w-4" />}
             {ReportBugList.name[language as keyof typeof ReportBugList.name]}

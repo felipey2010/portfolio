@@ -160,20 +160,20 @@ export const HobbyList = {
   },
   hobbies: [
     {
-      en: 'Coding',
-      pt: 'Programação',
+      en: 'Listen to music',
+      pt: 'Ouvir música',
     },
     {
       en: 'Swimming',
       pt: 'Natação',
     },
     {
-      en: 'Play games',
-      pt: 'Jogar jogos',
+      en: 'Watch basketball',
+      pt: 'Assistir basquete',
     },
     {
-      en: 'Watch tutorials',
-      pt: 'Assistir tutoriais',
+      en: 'Play games',
+      pt: 'Jogar jogos',
     },
     {
       en: 'Ride motorbike',
@@ -487,10 +487,10 @@ export const TechnologiesList = {
   },
   technologies: [
     {
-      name: 'Javascript ( React JS, Next JS)',
+      name: 'Javascript ( Next JS)',
     },
     {
-      name: 'Java',
+      name: 'Java (Spring framework)',
     },
     {
       name: 'Node JS',
@@ -604,12 +604,6 @@ export const ContactList = {
       value: 'https://github.com/felipey2010',
       type: 'link',
       icon: Github,
-    },
-    {
-      name: 'X',
-      value: 'https://twitter.com/felipey2010',
-      type: 'link',
-      icon: X,
     },
   ],
 }
