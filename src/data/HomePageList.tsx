@@ -16,6 +16,7 @@ export const HomePageList = {
         I&apos;m Ghanaian but currently based in Brazil. I have over 2 years of
         experience in system development. Listening to music, watching
         basketball, and playing badminton are my current favorite activities.
+        <br />
         Programming is my passion, and I&apos;m always eager to learn more.
       </>
     ),
@@ -24,6 +25,7 @@ export const HomePageList = {
         Sou ganês, mas atualmente moro no Brasil. Tenho mais de 2 anos de
         experiência em desenvolvimento de sistemas. Ouvir música, assistir
         basquete e jogar badminton são minhas atividades favoritas no momento.
+        <br />
         Programação é minha paixão e estou sempre ansioso para aprender mais.
       </>
     ),
