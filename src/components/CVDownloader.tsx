@@ -3,10 +3,18 @@ import { PiDownloadSimpleFill } from 'react-icons/pi'
 import { Button } from './ui/button'
 
 const filePath = '/downloads/PHILIP_MAHAMA_AKPANYI.pdf'
+const filePathEn = '/downloads/PHILIP_MAHAMA_AKPANYI_en.pdf'
 
-function CVDownloader({ buttonText = 'Download CV' }: { buttonText?: string }) {
+function CVDownloader({
+  buttonText = 'Download CV',
+  language = 'en',
+}: {
+  buttonText?: string
+  language?: string
+}) {
   function openFile() {
-    window.open(filePath, '_blank')
+    const file = language === 'en' ? filePathEn : filePath
+    window.open(file, '_blank')
   }
 
   return (

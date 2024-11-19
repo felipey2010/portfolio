@@ -21,7 +21,7 @@ function PrivacyPolicyView() {
           }
         </h1>
 
-        <section className="mb-4">
+        <section className="mb-4 text-justify">
           <h2 className="text-xl font-semibold mb-2">
             {
               PrivacyPolicyList.about[
@@ -65,7 +65,7 @@ function PrivacyPolicyView() {
           </ul>
         </section>
 
-        <section className="mb-4">
+        <section className="mb-4 text-justify">
           <h2 className="text-xl font-semibold mb-2">
             {
               PrivacyPolicyList.collections.title[
@@ -82,7 +82,7 @@ function PrivacyPolicyView() {
           </p>
         </section>
 
-        <section className="mb-4">
+        <section className="mb-4 text-justify">
           <h2 className="text-xl font-semibold mb-2">
             {
               PrivacyPolicyList.rights.title[
@@ -99,7 +99,7 @@ function PrivacyPolicyView() {
           </p>
         </section>
 
-        <section className="mb-4">
+        <section className="mb-4 text-justify">
           <h2 className="text-xl font-semibold mb-2">
             {
               PrivacyPolicyList.changeAlert.title[

@@ -164,8 +164,8 @@ export const HobbyList = {
       pt: 'Ouvir música',
     },
     {
-      en: 'Swimming',
-      pt: 'Natação',
+      en: 'Swim',
+      pt: 'Nadar',
     },
     {
       en: 'Watch basketball',
@@ -177,7 +177,7 @@ export const HobbyList = {
     },
     {
       en: 'Ride motorbike',
-      pt: 'Andar de motor',
+      pt: 'Andar de moto',
     },
   ],
 }

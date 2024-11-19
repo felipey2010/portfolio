@@ -54,6 +54,7 @@ function Contact({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
               {ContactList.contacts.map((contact, index) => (
                 <Link
                   href={contact.value}
+                  target="_blank"
                   key={`contact-${index}`}
                   className="w-fit flex items-center space-x-2 text-muted-foreground hover:text-foreground hover:underline transition-all duration-100 ease-in-out group"
                 >

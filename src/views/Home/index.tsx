@@ -19,24 +19,24 @@ function HomeView() {
       <div className="w-full flex-col items-center py-4 space-y-6 mb-14">
         {/* Image and status */}
         <div className="w-full flex flex-col items-center gap-2">
-          <span className="flex items-center gap-4 border border-border bg-border py-0.5 px-2 rounded-xl">
+          <div className="flex items-center gap-4 border border-border bg-border py-0.5 px-2 rounded-xl">
             <span
               className={cn(
                 'w-3 h-3 rounded-full animate-pulse',
                 HomePageList.status ? 'bg-green-500' : 'bg-red-500'
               )}
             />
-            <p className="text-muted-foreground text-xs font-source-code">
+            <p className="flex-1 text-muted-foreground text-xs font-source-code">
               {
                 HomePageList.statusText[
                   language as keyof typeof HomePageList.statusText
                 ]
               }
             </p>
-          </span>
+          </div>
         </div>
         {/* Name presentation */}
-        <div className="w-full flex flex-col items-center gap-2">
+        <div className="w-full flex flex-col items-center gap-2 text-center">
           <h3 className="text-2xl font-semibold">{HomePageList.prefixName}</h3>
           <h1 className="text-foreground text-4xl sm:text-6xl font-bold">
             {HomePageList.name}
@@ -44,7 +44,7 @@ function HomeView() {
         </div>
         {/* Profession */}
         <div className="w-full flex items-center justify-center">
-          <span className="flex flex-col sm:flex-row items-center justify-center gap-4 p-4 rounded-xl bg-card-foreground/85 border-border text-input">
+          <span className="flex flex-col sm:flex-row items-center text-center justify-center gap-4 p-4 rounded-xl bg-card-foreground/85 border-border text-input">
             <RiSparkling2Fill className="w-4 h-4 mx-2" />
             <h2 className="uppercase">
               {
@@ -87,6 +87,7 @@ function HomeView() {
                 language as keyof typeof HomePageList.button.downloadCV
               ]
             }
+            language={language}
           />
         </div>
         <div className="md:max-w-2xl lg:max-w-4xl 2xl:max-w-5xl flex overflow-x-hidden">

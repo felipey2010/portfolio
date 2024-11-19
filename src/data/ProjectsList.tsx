@@ -58,6 +58,21 @@ export const ProjectsList = [
         demoLink: 'https://sistemas.rr.gov.br/jogosescolares/',
         githubLink: '#',
       },
+      {
+        id: 'p1.2',
+        name: {
+          en: 'My portfolio',
+          pt: 'Meu portfólio',
+        },
+        description: {
+          en: 'A simple portfolio website built with Next.js, Tailwind CSS and shadcn UI components.',
+          pt: 'Um website de portfólio simples construído com Next.js, Tailwind CSS e componentes de UI do shadcn.',
+        },
+        image: '/assets/portfolio.png',
+        tags: ['Next JS', 'Tailwind CSS', 'shadcn UI'],
+        demoLink: 'https://dev-philip.vercel.app/',
+        githubLink: 'https://github.com/felipey2010/portfolio',
+      },
     ],
   },
   {

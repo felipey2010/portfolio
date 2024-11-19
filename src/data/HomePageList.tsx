@@ -36,7 +36,7 @@ export const HomePageList = {
       pt: 'Contate-me',
     },
     downloadCV: {
-      en: 'Download CV',
+      en: 'Check My CV',
       pt: 'Baixar CV',
     },
   },
