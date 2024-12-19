@@ -5,7 +5,7 @@ import LanguageProvider from '@/Providers/LanguageProvider'
 import { ThemeProvider } from '@/Providers/ThemeProvider'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import localFont from 'next/font/local'
 
 export const metadata: Metadata = {
   title: 'Philip Akpanyi - Web Developer',
@@ -13,11 +13,18 @@ export const metadata: Metadata = {
   keywords: 'philip, akpanyi, portfolio, web developer',
 }
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '700', '900'],
-  style: ['italic', 'normal'],
-  variable: '--font-poppins',
+const geistSans = localFont({
+  src: '../fonts/GeistVF.woff',
+  variable: '--font-geist-sans',
+  weight: '400 500 700 900',
+  style: 'italic normal',
+})
+
+const geistMono = localFont({
+  src: '../fonts/GeistMonoVF.woff',
+  variable: '--font-geist-mono',
+  weight: '400 500 700 900',
+  style: 'italic normal',
 })
 
 export default function RootLayout({
@@ -28,11 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={cn(
-          poppins.className,
-          // source_code_pro.className,
-          'antialiased'
-        )}
+        className={cn(geistMono.className, geistSans.className, 'antialiased')}
         suppressHydrationWarning={true}
       >
         <ThemeProvider
