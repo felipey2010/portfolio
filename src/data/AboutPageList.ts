@@ -492,7 +492,7 @@ export const WorkExperienceList = {
       },
       responsibilities: [
         {
-          en: `Develop personal and other people&apos;s projects on demand`,
+          en: `Develop personal and other people's projects on demand`,
           pt: 'Desenvolver projetos pessoais e dos outros sob demanda',
         },
       ],

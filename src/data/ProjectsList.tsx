@@ -67,6 +67,28 @@ export const ProjectsList = [
       {
         id: 'p1.2',
         name: {
+          en: 'Job Board',
+          pt: 'Balcão de Empregos',
+        },
+        description: {
+          en: 'An intuitive platform focused on advertising jobs and business opportunities. The system offers features such as personalized job search, resume registration and selection process management.',
+          pt: 'Uma plataforma intuitiva voltada para divulgação de empregos e oportunidades de negócios. O sistema oferece funcionalidades como busca personalizada de vagas, cadastro de currículos e gestão de processos seletivos',
+        },
+        image: '/assets/balcao_empregos.png',
+        tags: [
+          'spring-boot',
+          'java',
+          'postgresql',
+          'spring-security',
+          'next js',
+          'API Rest',
+        ],
+        demoLink: '',
+        githubLink: '#',
+      },
+      {
+        id: 'p1.3',
+        name: {
           en: 'My portfolio',
           pt: 'Meu portfólio',
         },
