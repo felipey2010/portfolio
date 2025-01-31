@@ -104,8 +104,8 @@ export const EducationList = {
         pt: 'Universidade Federal de Roraima - (UFRR)',
       },
       status: {
-        en: 'In Progress',
-        pt: 'Em andamento',
+        en: 'In Progress (graduating)',
+        pt: 'Em andamento (finalizando)',
       },
       location: {
         en: 'Roraima - Brazil',
@@ -360,8 +360,8 @@ export const WorkExperienceList = {
       ],
       experiences: [
         {
-          en: 'Javascript (React & Next JS)',
-          pt: 'Javascript (React & Next JS)',
+          en: 'Javascript (React - Next JS)',
+          pt: 'Javascript (React - Next JS)',
         },
         {
           en: 'I.T Support',
@@ -421,16 +421,16 @@ export const WorkExperienceList = {
         pt: 'Desenvolvedor de sistemas',
       },
       company: {
-        en: 'State Government',
-        pt: 'Governo Estadual',
+        en: 'State Secretariat for Digital Government (SEGOD)',
+        pt: 'Secretaria de Estado de Governo Digital (SEGOD)',
       },
       location: {
         en: 'Roraima, Brazil',
         pt: 'Roraima, Brasil',
       },
       period: {
-        en: 'March, 2022 - present',
-        pt: 'Março, 2022 - atual',
+        en: 'March, 2022 - January, 2025',
+        pt: 'Março, 2022 - Janeiro, 2025',
       },
       responsibilities: [
         {
@@ -456,8 +456,8 @@ export const WorkExperienceList = {
           pt: 'Java (Spring framework)',
         },
         {
-          en: 'Javascript (React & Next JS and Node JS)',
-          pt: 'Javascript (React & Next JS e Node JS)',
+          en: 'Javascript (React - Next JS and Node JS)',
+          pt: 'Javascript (React - Next JS e Node JS)',
         },
         {
           en: 'Database (PostgreSQL)',
@@ -470,6 +470,44 @@ export const WorkExperienceList = {
         {
           en: 'Dependency management (Maven)',
           pt: 'Gerenciamento de dependências (Maven)',
+        },
+      ],
+    },
+    {
+      position: {
+        en: 'System developer',
+        pt: 'Desenvolvedor de sistemas',
+      },
+      company: {
+        en: 'Freelance',
+        pt: 'Freelance',
+      },
+      location: {
+        en: 'Roraima, Brazil',
+        pt: 'Roraima, Brasil',
+      },
+      period: {
+        en: 'January, 2025 - present',
+        pt: 'Janeiro, 2025 - atual',
+      },
+      responsibilities: [
+        {
+          en: `Develop personal and other people&apos;s projects on demand`,
+          pt: 'Desenvolver projetos pessoais e dos outros sob demanda',
+        },
+      ],
+      experiences: [
+        {
+          en: 'Comunication with clients',
+          pt: 'Comunicação com clientes',
+        },
+        {
+          en: 'Structuring projects to facilitate their implementation',
+          pt: 'Estruturação de projetos para facilitar a sua implementação',
+        },
+        {
+          en: 'How to sell my products',
+          pt: 'Como vender meus produtos',
         },
       ],
     },
