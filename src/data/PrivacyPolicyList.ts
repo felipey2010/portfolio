@@ -70,7 +70,7 @@ export const PrivacyPolicyList = {
     },
     description: {
       en: 'We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this page periodically for the latest information on our privacy practices.',
-      pt: 'Podemos atualizar esta política de privacidade de vez em quando para refletir mudanças nas nossas práticas ou exigências legais. Encorajamos você a rever esta página periodicamente para obter as últimas informações sobre nossas práticas de privacidade.',
+      pt: 'Podemos atualizar esta política de privacidade de vez em quando para refletir mudanças em nossas práticas ou exigências legais. Encorajamos você a rever esta página periodicamente para obter as últimas informações sobre nossas práticas de privacidade.',
     },
   },
 }

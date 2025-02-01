@@ -45,9 +45,7 @@ function BlogView() {
                     {post.title}
                   </Link>
                 </h2>
-                <time className="text-sm text-muted-foreground mb-2 block">
-                  {post.date}
-                </time>
+                <time className="text-sm mb-2 block">{post.date}</time>
                 <p className="text-sm mb-2 text-justify line-clamp-6">
                   {post.excerpt[language as keyof typeof post.excerpt]}
                 </p>

@@ -99,7 +99,7 @@ function PrivacyPolicyView() {
           </p>
         </section>
 
-        <section className="mb-4 text-justify">
+        <section className="mb-6 text-justify">
           <h2 className="text-xl font-semibold mb-2">
             {
               PrivacyPolicyList.changeAlert.title[

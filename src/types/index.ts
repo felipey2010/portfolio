@@ -6,16 +6,15 @@ export type MenuListType = {
   icon: IconType
 }[]
 
+export type LanguageType = {
+  en: string
+  pt: string
+}
+
 export type CategoryItemType = {
   id: string
-  name: {
-    en: string
-    pt: string
-  }
-  description: {
-    en: string
-    pt: string
-  }
+  name: LanguageType
+  description: LanguageType
   image: string
   tags: string[]
   demoLink: string
@@ -24,13 +23,7 @@ export type CategoryItemType = {
 
 export type CategoryType = {
   id: string
-  name: {
-    en: string
-    pt: string
-  }
-  description: {
-    en: string
-    pt: string
-  }
+  name: LanguageType
+  description: LanguageType
   children: CategoryItemType[]
 }
