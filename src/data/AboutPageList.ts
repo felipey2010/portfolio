@@ -517,8 +517,8 @@ export const WorkExperienceList = {
         pt: 'Desenvolvedor Fullstack',
       },
       company: {
-        en: 'STI - RR',
-        pt: 'STI - RR',
+        en: 'Information Technology Solutions (STI - RR)',
+        pt: 'Soluções em Tecnologia da Informação (STI - RR)',
       },
       location: {
         en: 'Roraima, Brazil',
