@@ -487,8 +487,8 @@ export const WorkExperienceList = {
         pt: 'Roraima, Brasil',
       },
       period: {
-        en: 'January, 2025 - present',
-        pt: 'Janeiro, 2025 - atual',
+        en: 'January, 2025 - February, 2025',
+        pt: 'Janeiro, 2025 - Fevereiro, 2025',
       },
       responsibilities: [
         {
@@ -508,6 +508,52 @@ export const WorkExperienceList = {
         {
           en: 'How to sell my products',
           pt: 'Como vender meus produtos',
+        },
+      ],
+    },
+    {
+      position: {
+        en: 'Fullstack Developer',
+        pt: 'Desenvolvedor Fullstack',
+      },
+      company: {
+        en: 'STI - RR',
+        pt: 'STI - RR',
+      },
+      location: {
+        en: 'Roraima, Brazil',
+        pt: 'Roraima, Brasil',
+      },
+      period: {
+        en: 'February, 2025 - present',
+        pt: 'Fevereiro, 2025 - atual',
+      },
+      responsibilities: [
+        {
+          en: 'Develop solutions to meet customer needs (API, web, mobile and desktop)',
+          pt: 'Desenvolver soluções para atender as necessidades dos clientes (API, web, celular e desktop)',
+        },
+        {
+          en: 'Create automated tests',
+          pt: 'Criar testes automatizados',
+        },
+      ],
+      experiences: [
+        {
+          en: 'Create multiplatform apps using Flutter',
+          pt: 'Crie aplicativos multiplataforma usando Flutter',
+        },
+        {
+          en: 'RESTful APIs',
+          pt: 'APIs RESTful',
+        },
+        {
+          en: 'Automated tests',
+          pt: 'Testes automatizados',
+        },
+        {
+          en: 'Code refactoring for efficiency',
+          pt: 'Refatoração de códigos para obter eficiência',
         },
       ],
     },
