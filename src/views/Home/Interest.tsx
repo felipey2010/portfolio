@@ -1,4 +1,3 @@
-import { HomePageList } from '@/data/HomePageList'
 import { LanguageType } from '@/types'
 import { RiSparkling2Fill } from 'react-icons/ri'
 

@@ -1,4 +1,4 @@
-import Loading from '@/components/Loading'
+import Loading from '@/components/loading'
 
 function LoadingPage() {
   return <Loading />
