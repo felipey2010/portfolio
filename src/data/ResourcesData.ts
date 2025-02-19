@@ -25,14 +25,6 @@ export const ResourcesData = {
       },
       resources: [
         {
-          name: 'DevDocs',
-          url: 'https://devdocs.io/',
-          description: {
-            en: 'Fast and searchable API documentation.',
-            pt: 'Documentação de API rápida e pesquisável.',
-          },
-        },
-        {
           name: 'RemoveBG',
           url: 'https://www.remove.bg/',
           description: {
@@ -48,12 +40,28 @@ export const ResourcesData = {
             pt: 'Formate e valide JSON.',
           },
         },
+        {
+          name: 'Undraw',
+          url: 'https://undraw.co/',
+          description: {
+            en: 'Free illustrations for your projects.',
+            pt: 'Ilustrações gratuitas para seus projetos.',
+          },
+        },
+        {
+          name: '4devs',
+          url: 'https://www.4devs.com.br/',
+          description: {
+            en: 'Free utilities for developers.',
+            pt: 'Utilitários gratuitos para desenvolvedores.',
+          },
+        },
       ],
     },
     {
       title: {
-        en: 'Web Development & Frameworks',
-        pt: 'Desenvolvimento Web e Frameworks',
+        en: 'Web Development',
+        pt: 'Desenvolvimento Web',
       },
       description: {
         en: 'Guides, documentation, and resources for frontend and backend development.',
@@ -61,19 +69,19 @@ export const ResourcesData = {
       },
       resources: [
         {
-          name: 'MDN Web Docs',
-          url: 'https://developer.mozilla.org/',
+          name: 'Dribbble',
+          url: 'https://dribbble.com/',
           description: {
-            en: 'The best resource for web development.',
-            pt: 'A melhor fonte de recursos para desenvolvimento web.',
+            en: 'Design inspiration and collaboration platform.',
+            pt: 'Plataforma de inspiração e colaboração de design.',
           },
         },
         {
-          name: 'CSS-Tricks',
-          url: 'https://css-tricks.com/',
+          name: 'Shadcn UI',
+          url: 'https://ui.shadcn.com/',
           description: {
-            en: 'Tips, tricks, and tutorials on CSS.',
-            pt: 'Dicas, truques e tutoriais sobre CSS.',
+            en: 'Free and open source Tailwind CSS components.',
+            pt: 'Componentes de Tailwind CSS gratuitos e de código aberto.',
           },
         },
         {
@@ -85,11 +93,35 @@ export const ResourcesData = {
           },
         },
         {
-          name: 'React Docs',
-          url: 'https://react.dev/',
+          name: 'Envato',
+          url: 'https://themeforest.net/',
           description: {
-            en: 'Official documentation for React.js.',
-            pt: 'Documentação oficial para React.js.',
+            en: 'Free and premium themes for Bootstrap.',
+            pt: 'Temas gratuitos e premium para Bootstrap.',
+          },
+        },
+        {
+          name: 'Spring Initializr',
+          url: 'https://start.spring.io/',
+          description: {
+            en: 'Quickly generate Spring Boot applications.',
+            pt: 'Gere rapidamente aplicações Spring Boot.',
+          },
+        },
+        {
+          name: 'Envato',
+          url: 'https://themeforest.net/',
+          description: {
+            en: 'Free and premium themes for Bootstrap.',
+            pt: 'Temas gratuitos e premium para Bootstrap.',
+          },
+        },
+        {
+          name: 'Unlayer',
+          url: 'https://unlayer.com/',
+          description: {
+            en: 'Email templates builder.',
+            pt: 'Construtor de modelos de e-mail.',
           },
         },
       ],
@@ -105,19 +137,19 @@ export const ResourcesData = {
       },
       resources: [
         {
-          name: 'Eloquent JavaScript',
-          url: 'https://eloquentjavascript.net/',
+          name: 'Fuun Retrospectives',
+          url: 'https://www.funretrospectives.com/',
           description: {
-            en: 'Free JavaScript book.',
-            pt: 'Livro JavaScript gratuito.',
+            en: 'Retrospectives for software teams.',
+            pt: 'Retrospectivas para equipes de software.',
           },
         },
         {
-          name: "You Don't Know JS",
-          url: 'https://github.com/getify/You-Dont-Know-JS',
+          name: 'Beecrowd Academics',
+          url: 'https://beecrowd.com/',
           description: {
-            en: 'Advanced JavaScript concepts.',
-            pt: 'Conceitos avançados de JavaScript.',
+            en: 'Online platform for assessing and improving skills.',
+            pt: 'Plataforma online para avaliar e melhorar habilidades.',
           },
         },
         {
@@ -182,6 +214,14 @@ export const ResourcesData = {
           description: {
             en: 'Organize notes, tasks, and documentation.',
             pt: 'Organize notas, tarefas e documentação.',
+          },
+        },
+        {
+          name: 'Whimsical',
+          url: 'https://whimsical.com/',
+          description: {
+            en: 'Collaborative envirnoment for project management.',
+            pt: 'Ambiente colaborativo para gerenciamento de projetos.',
           },
         },
         {

@@ -22,7 +22,7 @@ function ResourcesPageView() {
           {ResourcesData.title[language as keyof typeof ResourcesData.title]}
         </h1>
       </div>
-      <p className="text-muted-foreground text-center mb-6">
+      <p className="text-muted-foreground font-normal text-center mb-6">
         {
           ResourcesData.description[
             language as keyof typeof ResourcesData.description
@@ -55,7 +55,7 @@ function ResourcesPageView() {
                             href={resource.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
+                            className="text-primary hover:underline"
                           >
                             {resource.name}
                           </a>
