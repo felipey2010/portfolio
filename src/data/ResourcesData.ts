@@ -1,12 +1,26 @@
-const ResourceList = {
-  title: 'Developer Resources',
-  description:
-    'A curated list of useful tools, guides, and references to help developers build and improve their skills.',
+export const ResourcesData = {
+  title: {
+    en: 'Developer Resources',
+    pt: 'Recursos para Desenvolvedores',
+  },
+  description: {
+    en: 'A curated list of useful tools, guides, and references to help developers build and improve their skills.',
+    pt: 'Uma lista curada de ferramentas úteis, guias e referências para ajudar os desenvolvedores a construir e melhorar suas habilidades.',
+  },
+  search: {
+    en: 'Search resources ...',
+    pt: 'Pesquisar recursos ...',
+  },
   categories: [
     {
-      title: 'Developer Tools & Utilities',
-      description:
-        'Essential tools for improving workflow, debugging, and optimizing performance.',
+      title: {
+        en: 'Developer Tools & Utilities',
+        pt: 'Ferramentas e Utilitários para Desenvolvedores',
+      },
+      description: {
+        en: 'Essential tools for improving workflow, debugging, and optimizing performance.',
+        pt: 'Ferramentas essenciais para melhorar o fluxo de trabalho, depuração e otimização de desempenho.',
+      },
       resources: [
         {
           name: 'DevDocs',
@@ -26,9 +40,14 @@ const ResourceList = {
       ],
     },
     {
-      title: 'Web Development & Frameworks',
-      description:
-        'Guides, documentation, and resources for frontend and backend development.',
+      title: {
+        en: 'Web Development & Frameworks',
+        pt: 'Desenvolvimento Web e Frameworks',
+      },
+      description: {
+        en: 'Guides, documentation, and resources for frontend and backend development.',
+        pt: 'Guias, documentação e recursos para desenvolvimento de front-end e back-end.',
+      },
       resources: [
         {
           name: 'MDN Web Docs',
@@ -53,9 +72,14 @@ const ResourceList = {
       ],
     },
     {
-      title: 'Programming & Learning Resources',
-      description:
-        'Books, tutorials, and free courses to enhance your programming knowledge.',
+      title: {
+        en: 'Programming & Learning Resources',
+        pt: 'Recursos de Programação e Aprendizagem',
+      },
+      description: {
+        en: 'Books, tutorials, and free courses to enhance your programming knowledge.',
+        pt: 'Livros, tutoriais e cursos gratuitos para melhorar sua compreensão de programação.',
+      },
       resources: [
         {
           name: 'Eloquent JavaScript',
@@ -75,9 +99,14 @@ const ResourceList = {
       ],
     },
     {
-      title: 'APIs & Open Source Projects',
-      description:
-        'Useful APIs and GitHub repositories to speed up development.',
+      title: {
+        en: 'APIs & Open Source Projects',
+        pt: 'APIs e Projetos Open Source',
+      },
+      description: {
+        en: 'Useful APIs and GitHub repositories to speed up development.',
+        pt: 'APIs úteis e repositórios GitHub para acelerar o desenvolvimento.',
+      },
       resources: [
         {
           name: 'Public APIs',
@@ -97,9 +126,14 @@ const ResourceList = {
       ],
     },
     {
-      title: 'Productivity & Project Management',
-      description:
-        'Tools to stay organized, manage projects, and boost productivity.',
+      title: {
+        en: 'Productivity & Project Management',
+        pt: 'Produtividade e Gerenciamento de Projetos',
+      },
+      description: {
+        en: 'Tools to stay organized, manage projects, and boost productivity.',
+        pt: 'Ferramentas para se manter organizado, gerenciar projetos e aumentar a produtividade.',
+      },
       resources: [
         {
           name: 'Notion',

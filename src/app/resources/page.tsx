@@ -1,5 +1,7 @@
+import ResourcesPageView from '@/views/Resources'
+
 function ResourcesPage() {
-  return <div>Resources Page</div>;
+  return <ResourcesPageView />
 }
 
-export default ResourcesPage;
+export default ResourcesPage
