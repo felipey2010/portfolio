@@ -52,6 +52,17 @@ export const ResourceList = {
     },
     {
       title: {
+        en: 'Resources',
+        pt: 'Recursos',
+      },
+      href: '/resources',
+      description: {
+        en: 'A collection of useful resources',
+        pt: 'Uma coleção de recursos úteis',
+      },
+    },
+    {
+      title: {
         en: 'Privacy Policy',
         pt: 'Política de Privacidade',
       },

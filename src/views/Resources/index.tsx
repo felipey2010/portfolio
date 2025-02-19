@@ -63,7 +63,11 @@ function ResourcesPageView() {
                       </CardHeader>
                       <CardContent>
                         <p className="text-muted-foreground">
-                          {resource.description}
+                          {
+                            resource.description[
+                              language as keyof typeof resource.description
+                            ]
+                          }
                         </p>
                       </CardContent>
                     </Card>

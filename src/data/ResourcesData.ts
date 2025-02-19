@@ -1,3 +1,5 @@
+import { en } from '@faker-js/faker'
+
 export const ResourcesData = {
   title: {
     en: 'Developer Resources',
@@ -25,17 +27,26 @@ export const ResourcesData = {
         {
           name: 'DevDocs',
           url: 'https://devdocs.io/',
-          description: 'Fast and searchable API documentation.',
+          description: {
+            en: 'Fast and searchable API documentation.',
+            pt: 'Documentação de API rápida e pesquisável.',
+          },
         },
         {
           name: 'RemoveBG',
           url: 'https://www.remove.bg/',
-          description: 'AI-powered background remover for images.',
+          description: {
+            en: 'AI-powered background remover for images.',
+            pt: 'Removação de fundo automatizada por IA para imagens.',
+          },
         },
         {
           name: 'JSON Formatter',
           url: 'https://jsonformatter.org/',
-          description: 'Format and validate JSON.',
+          description: {
+            en: 'Format and validate JSON.',
+            pt: 'Formate e valide JSON.',
+          },
         },
       ],
     },
@@ -52,22 +63,34 @@ export const ResourcesData = {
         {
           name: 'MDN Web Docs',
           url: 'https://developer.mozilla.org/',
-          description: 'The best resource for web development.',
+          description: {
+            en: 'The best resource for web development.',
+            pt: 'A melhor fonte de recursos para desenvolvimento web.',
+          },
         },
         {
           name: 'CSS-Tricks',
           url: 'https://css-tricks.com/',
-          description: 'Tips, tricks, and tutorials on CSS.',
+          description: {
+            en: 'Tips, tricks, and tutorials on CSS.',
+            pt: 'Dicas, truques e tutoriais sobre CSS.',
+          },
         },
         {
           name: 'Can I Use',
           url: 'https://caniuse.com/',
-          description: 'Check browser support for web features.',
+          description: {
+            en: 'Check browser support for web features.',
+            pt: 'Verifique o suporte aos recursos web.',
+          },
         },
         {
           name: 'React Docs',
           url: 'https://react.dev/',
-          description: 'Official documentation for React.js.',
+          description: {
+            en: 'Official documentation for React.js.',
+            pt: 'Documentação oficial para React.js.',
+          },
         },
       ],
     },
@@ -84,17 +107,26 @@ export const ResourcesData = {
         {
           name: 'Eloquent JavaScript',
           url: 'https://eloquentjavascript.net/',
-          description: 'Free JavaScript book.',
+          description: {
+            en: 'Free JavaScript book.',
+            pt: 'Livro JavaScript gratuito.',
+          },
         },
         {
           name: "You Don't Know JS",
           url: 'https://github.com/getify/You-Dont-Know-JS',
-          description: 'Advanced JavaScript concepts.',
+          description: {
+            en: 'Advanced JavaScript concepts.',
+            pt: 'Conceitos avançados de JavaScript.',
+          },
         },
         {
           name: 'The Odin Project',
           url: 'https://www.theodinproject.com/',
-          description: 'Free full-stack web dev course.',
+          description: {
+            en: 'Free full-stack web dev course.',
+            pt: 'Curso gratuito de desenvolvimento full-stack web',
+          },
         },
       ],
     },
@@ -111,17 +143,26 @@ export const ResourcesData = {
         {
           name: 'Public APIs',
           url: 'https://public-apis.io/',
-          description: 'A collection of free public APIs.',
+          description: {
+            en: 'A collection of free public APIs.',
+            pt: 'Uma coleção de APIs públicas gratuitas.',
+          },
         },
         {
           name: 'Awesome GitHub Repos',
           url: 'https://github.com/sindresorhus/awesome',
-          description: 'A curated list of useful repos.',
+          description: {
+            en: 'A curated list of useful repos.',
+            pt: 'Uma lista de repositórios úteis.',
+          },
         },
         {
           name: 'Unsplash API',
           url: 'https://unsplash.com/developers',
-          description: 'Free high-resolution images.',
+          description: {
+            en: 'Free high-resolution images.',
+            pt: 'Imagens de alta resolução gratuitas.',
+          },
         },
       ],
     },
@@ -138,17 +179,26 @@ export const ResourcesData = {
         {
           name: 'Notion',
           url: 'https://www.notion.so/',
-          description: 'Organize notes, tasks, and documentation.',
+          description: {
+            en: 'Organize notes, tasks, and documentation.',
+            pt: 'Organize notas, tarefas e documentação.',
+          },
         },
         {
           name: 'Pomofocus',
           url: 'https://pomofocus.io/',
-          description: 'Pomodoro technique timer.',
+          description: {
+            en: 'Pomodoro technique timer.',
+            pt: 'Temporizador de técnica Pomodoro.',
+          },
         },
         {
           name: 'Trello',
           url: 'https://trello.com/',
-          description: 'Visual project management tool.',
+          description: {
+            en: 'Visual project management tool.',
+            pt: 'Ferramenta de gerenciamento de projetos visual.',
+          },
         },
       ],
     },
