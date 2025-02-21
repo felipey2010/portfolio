@@ -1,71 +1,73 @@
-import { AppConfig } from "@/config";
+import Head from 'next/head'
+import { AppConfig } from '@/config'
 
 type Props = {
-  title: string;
-  description?: string;
-  keywords?: string;
-};
+  title: string
+  description?: string
+  keywords?: string
+  path?: string
+  image?: string
+}
 
-export default function SEO({ title, description, keywords }: Props) {
+export default function SEO({
+  title,
+  description = AppConfig.description,
+  keywords = AppConfig.keywords,
+  path = '',
+  image,
+}: Props) {
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app/'
+  const fullUrl = `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`
+  const defaultImage = `${baseUrl}/assets/site.png`
+  const ogImage = image
+    ? `${baseUrl}${image.startsWith('/') ? image : `/${image}`}`
+    : defaultImage
+
   const completeTitle = title
-    ? title + " - " + AppConfig.title
-    : AppConfig.title;
-  const completeDescription = description ? description : AppConfig.description;
-  const completeKeywords = keywords ? keywords : AppConfig.keywords;
-
-  let pathname = "";
-
-  if (typeof window !== "undefined") {
-    const url = new URL(window.location.href);
-    pathname = `${url.protocol}//${url.host}`;
-  }
+    ? `${title} - ${AppConfig.title}`
+    : AppConfig.title
 
   return (
-    <>
-      <meta charSet="UTF-8" key="charset" lang="pt-br" />
+    <Head>
+      <meta charSet="UTF-8" />
       <meta
         name="viewport"
-        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-        key="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
       />
 
       <title>{completeTitle}</title>
-      <meta name="description" content={completeDescription} />
-      <meta name="keywords" content={completeKeywords} />
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
 
-      <meta property="og:type" content="article" />
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={completeTitle} />
-      <meta property="og:description" content={completeDescription} />
-      <meta property="og:url" content={pathname} />
-      {/* End Facebook tags */}
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={fullUrl} />
+      <meta property="og:image" content={ogImage} />
 
-      {/* Twitter tags */}
-      <meta name="twitter:creator" content={AppConfig.title} />
-      <meta name="twitter:card" content={completeDescription} />
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={completeTitle} />
-      <meta name="twitter:description" content={completeDescription} />
-      {/* End Twitter tags */}
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:creator" content="@your_twitter_handle" />
 
-      {/* <link
-        rel="apple-touch-icon"
-        href="/assets/images/gov-roraima-icon.png"
-        key="govroraima"
-      />
+      {/* Favicons */}
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={"/assets/images/favicon-32x32.png"}
-        key="icon32"
+        href="/assets/images/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={"/assets/images/favicon-16x16.png"}
-        key="icon16"
+        href="/assets/images/favicon-16x16.png"
       />
-      <link rel="icon" href={"/assets/images/favicon.ico"} key="favicon" /> */}
-    </>
-  );
+      <link rel="icon" href="/assets/images/favicon.ico" />
+    </Head>
+  )
 }

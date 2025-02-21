@@ -25,6 +25,7 @@ function ProjectsView() {
             language as keyof typeof ProjectPageList.keywords
           ]
         }
+        path="projects"
       />
       <div className="h-full flex flex-col items-center gap-4 px-3">
         {/* Page title */}

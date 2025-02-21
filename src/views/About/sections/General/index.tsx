@@ -29,6 +29,7 @@ function General({ selectedLanguage = 'en' }: Props) {
             selectedLanguage as keyof typeof GENERAL_PAGE_INFO.keywords
           ]
         }
+        path="about"
       />
       <div className="flex flex-col gap-4 mb-2">
         {/* Profile Section (Optional) */}

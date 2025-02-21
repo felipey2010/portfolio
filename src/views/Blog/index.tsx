@@ -13,6 +13,7 @@ function BlogView() {
     <>
       <SEO
         title="Blog"
+        path="blog"
         description="Blog"
         keywords="blog, blog posts, portfolio, portfolio blog"
       />

@@ -10,7 +10,9 @@ function PrivacyPolicyView() {
     <>
       <SEO
         title="Privacy Policy"
+        path="privacy-policy"
         description="Privacy policy for this platform"
+        keywords="privacy policy, privacy, policy"
       />
       <div className="w-full mx-auto p-4 overflow-y-auto scroll-smooth">
         <h1 className="text-3xl font-bold mb-4 text-center">

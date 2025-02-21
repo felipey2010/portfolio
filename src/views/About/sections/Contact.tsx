@@ -23,6 +23,7 @@ function Contact({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
             selectedLanguage as keyof typeof CONTACT_PAGE_INFO.keywords
           ]
         }
+        path="about?tab=contact"
       />
       <div className="h-full flex flex-col items-center gap-4">
         <h1 className="text-2xl font-bold mb-4 text-center">

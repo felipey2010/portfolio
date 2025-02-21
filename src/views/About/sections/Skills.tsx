@@ -39,6 +39,7 @@ function Skills({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
             selectedLanguage as keyof typeof SKILLS_PAGE_INFO.keywords
           ]
         }
+        path="about?tab=skills"
       />
       <div className="h-full flex flex-col gap-4">
         <div className="w-full flex flex-col text-center">

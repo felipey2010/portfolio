@@ -9,6 +9,10 @@ export const ResourcesData = {
     en: 'A curated list of useful tools, guides, and references to help developers build and improve their skills.',
     pt: 'Uma lista curada de ferramentas úteis, guias e referências para ajudar os desenvolvedores a construir e melhorar suas habilidades.',
   },
+  keywords: {
+    en: 'resources, developer tools, utilities, guides, documentation, suggestions, recommendations',
+    pt: 'recursos, ferramentas, utilitários, guias, documentação, sugestões, recomendações',
+  },
   search: {
     en: 'Search resources ...',
     pt: 'Pesquisar recursos ...',

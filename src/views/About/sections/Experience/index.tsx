@@ -31,6 +31,7 @@ function Experience({ selectedLanguage = 'en' }: Props) {
             selectedLanguage as keyof typeof EXPERIENCE_PAGE_INFO.keywords
           ]
         }
+        path="about?tab=experience"
       />
       <div className="flex flex-col gap-4 pb-2">
         <SectionHeader selectedLanguage={selectedLanguage} />
