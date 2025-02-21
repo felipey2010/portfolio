@@ -17,7 +17,7 @@ export default function SEO({
   image,
 }: Props) {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app/'
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
   const fullUrl = `${baseUrl}${path.startsWith('/') ? path : `/${path}`}`
   const defaultImage = `${baseUrl}/assets/site.png`
   const ogImage = image

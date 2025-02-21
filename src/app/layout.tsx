@@ -7,10 +7,20 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
+const baseUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
+
 export const metadata: Metadata = {
   title: 'Philip Akpanyi - Web Developer',
   description: `Philip Akpanyi's portfolio site`,
   keywords: 'philip, akpanyi, portfolio, web developer',
+  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    images: '/opengraph-image.png',
+  },
 }
 
 const geistSans = localFont({

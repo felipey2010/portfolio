@@ -9,11 +9,11 @@ const getActiveTabs = () => {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app/'
+    process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
 
   const aboutPage = getActiveTabs().map((item) => {
     return {
-      url: `${baseUrl}about${item.link}`,
+      url: `${baseUrl}/about${item.link}`,
       lastModified: new Date(),
       changeFrequency: 'daily' as const,
     }
@@ -28,22 +28,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...aboutPage,
     {
-      url: `${baseUrl}blog`,
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'daily',
     },
     {
-      url: `${baseUrl}privacy-policy`,
+      url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: 'daily',
     },
     {
-      url: `${baseUrl}projects`,
+      url: `${baseUrl}/projects`,
       lastModified: new Date(),
       changeFrequency: 'daily',
     },
     {
-      url: `${baseUrl}resources`,
+      url: `${baseUrl}/resources`,
       lastModified: new Date(),
       changeFrequency: 'daily',
     },
