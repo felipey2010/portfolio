@@ -1,4 +1,4 @@
-import ContactForm from '@/components/forms/ContactForm'
+import ContactForm from '@/components/form/ContactForm'
 import SEO from '@/components/SEO'
 import { CONTACT_PAGE_INFO, ContactList } from '@/data/AboutPageList'
 import { ContactFormText } from '@/data/SystemList'
