@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/Providers/ThemeProvider'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react'
 
 const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
@@ -59,6 +60,7 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
