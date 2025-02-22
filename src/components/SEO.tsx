@@ -30,43 +30,21 @@ export default function SEO({
 
   return (
     <Head>
-      <meta charSet="UTF-8" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-      />
-
       <title>{completeTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-
-      {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={completeTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:image" content={ogImage} />
-
-      {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={completeTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:creator" content="@your_twitter_handle" />
-
-      {/* Favicons */}
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/assets/images/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/assets/images/favicon-16x16.png"
-      />
+      <link rel="icon" href="/assets/images/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" href="/assets/images/favicon-16x16.png" sizes="16x16" />
       <link rel="icon" href="/assets/images/favicon.ico" />
     </Head>
   )

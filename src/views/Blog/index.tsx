@@ -3,7 +3,6 @@ import SEO from '@/components/SEO'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { BlogPostPageList, blogPosts } from '@/data/BlogPosts'
 import { useLanguage } from '@/Providers/LanguageProvider'
-import Image from 'next/image'
 import Link from 'next/link'
 
 function BlogView() {
