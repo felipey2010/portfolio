@@ -8,8 +8,8 @@ export const ProjectPageList = {
     pt: 'Explore uma coleção de meus projetos web mais recentes. Cada um representa um desafio único e mostra diferentes habilidades e tecnologias.',
   },
   keywords: {
-    en: 'projects, web development, portfolio, projects page, my projects, my web development projects, web development projects, portfolio projects',
-    pt: 'projetos, desenvolvimento web, portfólio, página de projetos, meus projetos, meus projetos web, desenvolvimento web, projetos de portfólio',
+    en: 'projects, system development, portfolio, projects page, my projects, my system development projects, system development projects, portfolio projects',
+    pt: 'projetos, desenvolvimento sistemas, portfólio, página de projetos, meus projetos, meus projetos web, desenvolvimento web, projetos de portfólio',
   },
   callToAction: {
     title: {

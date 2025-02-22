@@ -7,8 +7,8 @@ export const HomePageList = {
   prefixName: `<Hello World, I am />`,
   name: 'Philip Akpanyi',
   profession: {
-    en: 'Enthusiastic Web Developer',
-    pt: 'Desenvolvedor Web Entusiasmado',
+    en: 'Enthusiastic System Developer',
+    pt: 'Desenvolvedor Sistema Entusiasmado',
   },
   description: {
     en: (
@@ -30,6 +30,7 @@ export const HomePageList = {
       </>
     ),
   },
+  keywords: 'home, portfolio, philip, akpanyi, developer, philip akpanyi',
   button: {
     contactMe: {
       en: 'Contact me',

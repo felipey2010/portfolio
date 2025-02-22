@@ -207,8 +207,8 @@ export const ProfileDetailsList = {
     pt: 'Oi, eu sou Philip Akpanyi',
   },
   description: {
-    en: 'A web developer with passion for creating innovative and user-friendly solutions.',
-    pt: 'Um desenvolvedor web com paixão em criar soluções inovadoras e fáceis de usar.',
+    en: 'A system developer with passion for creating innovative and user-friendly solutions.',
+    pt: 'Um desenvolvedor de sistemas com paixão em criar soluções inovadoras e fáceis de usar.',
   },
   quote: {
     en: 'Excellence is to do a common thing in an uncommon way.',
@@ -237,8 +237,8 @@ export const WorkExperienceList = {
     },
     areas: [
       {
-        en: 'Web Development',
-        pt: 'Desenvolvimento Web',
+        en: 'System Development',
+        pt: 'Desenvolvimento de Sistemas',
       },
     ],
   },

@@ -1,3 +1,4 @@
+'use client'
 import CVDownloader from '@/components/CVDownloader'
 import { Button } from '@/components/ui/button'
 import { LanguageType } from '@/types'

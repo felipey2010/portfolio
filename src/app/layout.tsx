@@ -4,17 +4,17 @@ import { cn } from '@/lib/utils'
 import LanguageProvider from '@/Providers/LanguageProvider'
 import { ThemeProvider } from '@/Providers/ThemeProvider'
 import '@/styles/globals.css'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import { Analytics } from '@vercel/analytics/react'
 
 const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
 
 export const metadata: Metadata = {
   title: 'Philip Akpanyi - Web Developer',
-  description: `Philip Akpanyi's portfolio site`,
-  keywords: 'philip, akpanyi, portfolio, web developer',
+  description: `Porfolio site of Philip Akpanyi, a system developer based in Brazil.`,
+  keywords: 'philip, akpanyi, portfolio, web developer, dev-philip',
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: '/',

@@ -64,8 +64,8 @@ export const ResourcesData = {
     },
     {
       title: {
-        en: 'Web Development',
-        pt: 'Desenvolvimento Web',
+        en: 'System Development',
+        pt: 'Desenvolvimento de Sistemas',
       },
       description: {
         en: 'Guides, documentation, and resources for frontend and backend development.',
