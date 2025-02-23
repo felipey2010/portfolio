@@ -1,11 +1,10 @@
-import SEO from '@/components/SEO'
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { SKILLS_PAGE_INFO, SkillsList } from '@/data/AboutPageList'
+import { SkillsList } from '@/data/AboutPageList'
 import { cn, generateRandomNumber } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { MutableRefObject, useRef, useState } from 'react'
@@ -22,51 +21,27 @@ type SkillType = {
 
 function Skills({ selectedLanguage = 'en' }: { selectedLanguage: string }) {
   return (
-    <>
-      <SEO
-        title={
-          SKILLS_PAGE_INFO.title[
-            selectedLanguage as keyof typeof SKILLS_PAGE_INFO.title
-          ]
-        }
-        description={
-          SKILLS_PAGE_INFO.description[
-            selectedLanguage as keyof typeof SKILLS_PAGE_INFO.description
-          ]
-        }
-        keywords={
-          SKILLS_PAGE_INFO.keywords[
-            selectedLanguage as keyof typeof SKILLS_PAGE_INFO.keywords
-          ]
-        }
-        path="about?tab=skills"
-      />
-      <div className="h-full flex flex-col gap-4">
-        <div className="w-full flex flex-col text-center">
-          <h1 className="text-2xl font-bold">
-            {
-              SkillsList.title[
-                selectedLanguage as keyof typeof SkillsList.title
-              ]
-            }
-          </h1>
-          <p className="text-sm italic">
-            {
-              SkillsList.description[
-                selectedLanguage as keyof typeof SkillsList.description
-              ]
-            }
-          </p>
-        </div>
-        <hr className="border-border" />
-        <div className="w-full flex flex-1 min-h-64 relative mx-auto pt-6 md:px-4 overflow-hidden">
-          <PlayField
-            skills={SkillsList.skills}
-            selectedLanguage={selectedLanguage}
-          />
-        </div>
+    <div className="h-full flex flex-col gap-4">
+      <div className="w-full flex flex-col text-center">
+        <h1 className="text-2xl font-bold">
+          {SkillsList.title[selectedLanguage as keyof typeof SkillsList.title]}
+        </h1>
+        <p className="text-sm italic">
+          {
+            SkillsList.description[
+              selectedLanguage as keyof typeof SkillsList.description
+            ]
+          }
+        </p>
       </div>
-    </>
+      <hr className="border-border" />
+      <div className="w-full flex flex-1 min-h-64 relative mx-auto pt-6 md:px-4 overflow-hidden">
+        <PlayField
+          skills={SkillsList.skills}
+          selectedLanguage={selectedLanguage}
+        />
+      </div>
+    </div>
   )
 }
 

@@ -14,6 +14,7 @@ type Props = {
 
 function SectionHeader({ language, content }: Props) {
   const { title, description } = content
+
   return (
     <div className="flex flex-col text-center">
       <h1 className="text-2xl font-bold tracking-tighter">

@@ -1,5 +1,6 @@
 import MainLayout from '@/components/MainLayout'
 import { Toaster } from '@/components/ui/toaster'
+import { AppConfig } from '@/config'
 import { cn } from '@/lib/utils'
 import LanguageProvider from '@/Providers/LanguageProvider'
 import { ThemeProvider } from '@/Providers/ThemeProvider'
@@ -12,15 +13,21 @@ const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
 
 export const metadata: Metadata = {
-  title: 'Philip Akpanyi - Web Developer',
-  description: `Porfolio site of Philip Akpanyi, a system developer based in Brazil.`,
-  keywords: 'philip, akpanyi, portfolio, web developer, dev-philip',
+  title: {
+    default: 'Philip Akpanyi - Web Developer',
+    template: `%s - ${AppConfig.title}`,
+  },
+  description: AppConfig.description,
+  keywords: AppConfig.keywords,
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    images: '/opengraph-image.png',
+    title: AppConfig.title,
+    description: AppConfig.description,
+    url: process.env.NEXT_PUBLIC_BASE_URL,
+    images: ['/opengraph-image.png', `${baseUrl}/assets/site.png`],
   },
 }
 
