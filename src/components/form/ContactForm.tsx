@@ -1,7 +1,7 @@
 'use client'
 import { ContactFormText } from '@/data/SystemList'
 import { sendContactEmail } from '@/lib/actions'
-import { useLanguage } from '@/Providers/LanguageProvider'
+import { useLanguage } from '@/providers/LanguageProvider'
 import { ContactFormSchema, ContactFormSchemaType } from '@/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { LoaderCircle } from 'lucide-react'

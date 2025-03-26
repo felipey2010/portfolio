@@ -10,7 +10,8 @@ import {
   PostgreSQL,
   Springboot,
   TailwindCSS,
-} from '@/lib/svg/TechLogos'
+  Flutter,
+} from '@/components/svg/TechLogos'
 import { cn } from '@/lib/utils'
 import Marquee from './Marquee'
 
@@ -27,7 +28,9 @@ function TechStack({ className }: { className?: string }) {
     PostgreSQL,
     Maven,
     Github,
+    Flutter,
   ]
+
   return (
     <div className="relative flex w-full items-center justify-center overflow-hidden">
       <Marquee pauseOnHover>

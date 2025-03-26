@@ -8,7 +8,7 @@ import {
 } from '@/components/ui/accordion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ResourcesData } from '@/data/ResourcesData'
-import { useLanguage } from '@/Providers/LanguageProvider'
+import { useLanguage } from '@/providers/LanguageProvider'
 import { FaTools } from 'react-icons/fa'
 
 function ResourcesPageView() {

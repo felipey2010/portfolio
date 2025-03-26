@@ -1,7 +1,7 @@
 'use client'
 import { Sidebar, SidebarBody, SidebarLink } from '@/components/ui/sidebar'
 import { AboutSidebarList } from '@/data/AboutPageList'
-import { AppLogo } from '@/lib/svg/Logo'
+import { AppLogo } from '@/components/svg/Logo'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'

@@ -1,6 +1,6 @@
 'use client'
 import { PageInConstruction } from '@/data/SystemList'
-import { useLanguage } from '@/Providers/LanguageProvider'
+import { useLanguage } from '@/providers/LanguageProvider'
 import { useRouter } from 'next/navigation'
 
 function PageUnderConstruction() {

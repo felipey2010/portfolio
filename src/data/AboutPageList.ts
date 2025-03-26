@@ -580,6 +580,9 @@ export const TechnologiesList = {
       name: 'Node JS (REST APIs)',
     },
     {
+      name: 'Flutter',
+    },
+    {
       name: 'PostgreSQL',
     },
     {
