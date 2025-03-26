@@ -1,6 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link, { LinkProps } from 'next/link'
 import React, { createContext, useContext, useState } from 'react'

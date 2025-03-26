@@ -1,6 +1,6 @@
 'use client'
 import { BrazilFlag, USFlag } from '@/components/svg/Flags'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { Button } from './ui/button'
 import {
   DropdownMenu,

@@ -1,5 +1,5 @@
 'use client'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import './styles.css'
 
 const loadingText = {

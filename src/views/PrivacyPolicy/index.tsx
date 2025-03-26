@@ -1,6 +1,6 @@
 'use client'
 import { PrivacyPolicyList } from '@/data/PrivacyPolicyList'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 
 function PrivacyPolicyView() {
   const { language } = useLanguage()

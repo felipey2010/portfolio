@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import { MenuList, ResourceList } from '@/data/MenuList'
 import { cn } from '@/lib/utils'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import Link from 'next/link'
 import { forwardRef, ElementRef, ComponentPropsWithoutRef } from 'react'
 

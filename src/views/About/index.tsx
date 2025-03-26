@@ -1,5 +1,5 @@
 'use client'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { useSearchParams } from 'next/navigation'
 import Contact from './sections/Contact'
 import Experience from './sections/Experience'

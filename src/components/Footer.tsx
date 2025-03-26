@@ -1,6 +1,6 @@
 'use client'
 import { FooterList } from '@/data/FooterList'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import Clock from './Clock'
 import DateDisplay from './DateDisplay'
 

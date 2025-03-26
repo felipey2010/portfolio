@@ -1,7 +1,7 @@
 'use client'
 import { sad } from '@/data/Images'
 import { PageNotFoundList } from '@/data/SystemList'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import Image from 'next/image'
 import Link from 'next/link'
 

@@ -1,6 +1,6 @@
 'use client'
 import { ProjectPageList } from '@/data/ProjectsList'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import ContactCallToAction from './ContactCallToAction'
 import ProjectExplorer from './ProjectExplorer'
 import SectionHeader from './SectionHeader'

@@ -18,7 +18,7 @@ import {
 } from '@/components/ui/form'
 import { ReportBugList } from '@/data/ProfileList'
 import { sendBugReportEmail } from '@/lib/actions'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { BugReportSchema, BugReportSchemaType } from '@/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Dispatch, SetStateAction, useState } from 'react'

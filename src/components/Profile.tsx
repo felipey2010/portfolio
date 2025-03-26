@@ -6,7 +6,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { ProfileList, ReportBugList } from '@/data/ProfileList'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { useState } from 'react'
 import ReportBug from './ReportBug'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'

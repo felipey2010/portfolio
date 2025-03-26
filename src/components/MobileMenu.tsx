@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/menubar'
 import { MobileMenuList } from '@/data/MobileMenuList'
 import { cn } from '@/lib/utils'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { usePathname, useRouter } from 'next/navigation'
 import { BsCheck } from 'react-icons/bs'
 import { MdKeyboardArrowDown } from 'react-icons/md'

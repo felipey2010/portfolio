@@ -1,7 +1,7 @@
 'use client'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { BlogPostPageList, blogPosts } from '@/data/BlogPosts'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import Link from 'next/link'
 
 function BlogView() {

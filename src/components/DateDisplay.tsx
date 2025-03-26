@@ -4,7 +4,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
-import { useLanguage } from '@/providers/LanguageProvider'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 import { useEffect, useState } from 'react'
 import { PiCalendarDotsThin } from 'react-icons/pi'
 import { Button } from './ui/button'
