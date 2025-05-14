@@ -7,14 +7,14 @@ export const HomePageList = {
   prefixName: `<Hello World, I am />`,
   name: 'Philip Akpanyi',
   profession: {
-    en: 'Enthusiastic System Developer',
-    pt: 'Desenvolvedor Sistema Entusiasmado',
+    en: 'Enthusiastic Systems Developer',
+    pt: 'Desenvolvedor Sistemas Entusiasmado',
   },
   description: {
     en: (
       <>
         I&apos;m Ghanaian but currently based in Brazil. I have over 2 years of
-        experience in system development. Listening to music, watching
+        experience in systems development. Listening to music, watching
         basketball, and playing badminton are my current favorite activities.
         <br />
         Programming is my passion, and I&apos;m always eager to learn more.

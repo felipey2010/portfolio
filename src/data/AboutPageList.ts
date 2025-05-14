@@ -525,8 +525,8 @@ export const WorkExperienceList = {
         pt: 'Roraima, Brasil',
       },
       period: {
-        en: 'February, 2025 - present',
-        pt: 'Fevereiro, 2025 - atual',
+        en: 'February, 2025 - April, 2025',
+        pt: 'Fevereiro, 2025 - Abril, 2025',
       },
       responsibilities: [
         {
@@ -557,6 +557,40 @@ export const WorkExperienceList = {
         },
       ],
     },
+    {
+      position: {
+        en: 'Systems Analyst',
+        pt: 'Analista de sistemas',
+      },
+      company: {
+        en: 'FPF Tech',
+        pt: 'FPF Tech',
+      },
+      location: {
+        en: 'Manaus, Brazil',
+        pt: 'Manaus, Brasil',
+      },
+      period: {
+        en: 'April, 2025 - present',
+        pt: 'Abril, 2025 - atual',
+      },
+      responsibilities: [
+        {
+          en: 'Develop applications for modems using various technologies',
+          pt: 'Desenvolver aplicações para modems utilizando várias tecnologias',
+        },
+      ],
+      experiences: [
+        {
+          en: 'Develop applications with angular js',
+          pt: 'Desenvolver aplicações com angular js',
+        },
+        {
+          en: 'Management of activities using JIRA and Microsoft Teams',
+          pt: 'Gerenciamento de atividades utilizando JIRA e Microsoft Teams',
+        },
+      ],
+    },
   ],
 }
 
@@ -580,6 +614,9 @@ export const TechnologiesList = {
       name: 'Node JS (REST APIs)',
     },
     {
+      name: 'Angular JS',
+    },
+    {
       name: 'Flutter',
     },
     {
@@ -593,6 +630,9 @@ export const TechnologiesList = {
     },
     {
       name: 'Maven',
+    },
+    {
+      name: 'JIRA',
     },
   ],
 }
