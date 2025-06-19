@@ -7,8 +7,8 @@ export const HomePageList = {
   prefixName: `<Hello World, I am />`,
   name: 'Philip Akpanyi',
   profession: {
-    en: 'Enthusiastic Systems Developer',
-    pt: 'Desenvolvedor Sistemas Entusiasmado',
+    en: 'Systems Analyst',
+    pt: 'Analista de Sistemas',
   },
   description: {
     en: (
