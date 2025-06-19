@@ -1,8 +1,8 @@
 export const HomePageList = {
-  status: true,
+  status: false,
   statusText: {
-    en: 'Available for new oportunities',
-    pt: 'Disponível para novas oportunidades',
+    en: 'Working at FPF Tech',
+    pt: 'Trabalhando na FPF Tech',
   },
   prefixName: `<Hello World, I am />`,
   name: 'Philip Akpanyi',
