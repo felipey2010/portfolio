@@ -19,7 +19,7 @@ export const BlogPostPageList = {
 
 export const blogPosts = [
   {
-    title: `[IntelliJ Fix] Fixing Spring Boot Startup Exception: InaccessibleObjectException "opens java.lang"`,
+    title: `[IntelliJ Fix] Fixing Spring Boot Startup Exception: Inaccessible Object Exception "opens java.lang"`,
     link: 'https://dev.to/felipey2010/intellij-fix-fixing-spring-boot-startup-exception-javalangreflectinaccessibleobjectexception-47b',
     date: '2024-12-03',
     excerpt: {
