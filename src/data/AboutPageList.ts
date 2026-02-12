@@ -571,23 +571,31 @@ export const WorkExperienceList = {
         pt: 'Manaus, Brasil',
       },
       period: {
-        en: 'April, 2025 - present',
-        pt: 'Abril, 2025 - atual',
+        en: 'April, 2025 - February, 2026',
+        pt: 'Abril, 2025 - Fevereiro, 2026',
       },
       responsibilities: [
         {
-          en: 'Develop applications for modems using various technologies',
-          pt: 'Desenvolver aplicações para modems utilizando várias tecnologias',
+          en: 'Develop the user interface to configure modems of the internet providers',
+          pt: 'Desenvolver a interface do usuário para configurar modems dos provedores de internet',
+        },
+        {
+          en: 'Fix bugs reported by the clients and implement new features for the UI',
+          pt: 'Corrigir bugs reportados pelos clientes e implementar novas funcionalidades para a interface do usuário',
         },
       ],
       experiences: [
         {
-          en: 'Develop applications with angular js',
-          pt: 'Desenvolver aplicações com angular js',
+          en: 'Understand modems and their configurations',
+          pt: 'Compreender modems e suas configurações',
         },
         {
-          en: 'Management of activities using JIRA and Microsoft Teams',
-          pt: 'Gerenciamento de atividades utilizando JIRA e Microsoft Teams',
+          en: 'Work with a team of developers using agile methodologies, code versioning with Gitlab and project management using JIRA and Microsoft Teams',
+          pt: 'Trabalhar com uma equipe de desenvolvedores utilizando metodologias ágeis, versionamento de código com Gitlab e gerenciamento de projetos utilizando JIRA e Microsoft Teams',
+        },
+        {
+          en: 'Creating test cases and performing tests to ensure the quality of the product',
+          pt: 'Criar casos de teste e realizar testes para garantir a qualidade do produto',
         },
       ],
     },

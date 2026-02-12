@@ -97,7 +97,7 @@ export const ProjectsList = [
           pt: 'Um website de portfólio simples construído com Next.js, Tailwind CSS e componentes de UI do shadcn.',
         },
         image: '/assets/portfolio.png',
-        tags: ['Next JS', 'Tailwind CSS', 'shadcn UI'],
+        tags: ['Next JS', 'Tailwind CSS', 'shadcn UI', 'Resend'],
         demoLink: 'https://dev-philip.vercel.app/',
         githubLink: 'https://github.com/felipey2010/portfolio',
       },

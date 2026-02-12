@@ -1,7 +1,8 @@
 'use client'
-import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { BlogPostPageList, blogPosts } from '@/data/BlogPosts'
 import { useLanguage } from '@/components/providers/LanguageProvider'
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { BlogPostPageList, blogPosts } from '@/data/BlogPosts'
+import Image from 'next/image'
 import Link from 'next/link'
 
 function BlogView() {
@@ -43,17 +44,16 @@ function BlogView() {
                 <time className="text-sm mb-2 block">{post.date}</time>
               )}
               {post.image && (
-                <img
+                <Image
                   src={post.image}
-                  alt={post.title}
+                  alt={post.title} width={500} height={500} priority
                   className="w-full h-auto rounded-lg mb-2"
                 />
               )}
               <p className="text-sm mb-2 text-justify line-clamp-6">
                 {post.excerpt[language as keyof typeof post.excerpt]}
               </p>
-            </CardContent>
-            <CardFooter className="mt-auto">
+              <div className="mt-auto">
               <Link
                 href={post.link}
                 target="_blank"
@@ -65,7 +65,8 @@ function BlogView() {
                   ]
                 }
               </Link>
-            </CardFooter>
+            </div>
+            </CardContent>
           </Card>
         ))}
       </div>

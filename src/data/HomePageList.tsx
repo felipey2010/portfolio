@@ -1,10 +1,13 @@
 export const HomePageList = {
-  status: false,
+  status: true,
   statusText: {
-    en: 'Working at FPF Tech',
-    pt: 'Trabalhando na FPF Tech',
+    en: 'Looking for new opportunities...',
+    pt: 'Buscando novas oportunidades...',
   },
-  prefixName: `<Hello World, I am />`,
+  prefixName: {
+    en: `<Hello World, I am />`,
+    pt: `<Olá Mundo, Eu sou />`,
+  },
   name: 'Philip Akpanyi',
   profession: {
     en: 'Systems Analyst',
@@ -13,20 +16,12 @@ export const HomePageList = {
   description: {
     en: (
       <>
-        I&apos;m Ghanaian but currently based in Brazil. I have over 2 years of
-        experience in systems development. Listening to music, watching
-        basketball, and playing badminton are my current favorite activities.
-        <br />
-        Programming is my passion, and I&apos;m always eager to learn more.
+        A software developer with over 3 years of professional experience in the field. Possess knowledge in various programming languages and frameworks to build both frontend and backend applications, with a strong focus on delivering high-quality solutions. <br/>Passionate about technology and always eager to learn and grow in the ever-evolving world of software development.
       </>
     ),
     pt: (
       <>
-        Sou ganês, mas atualmente moro no Brasil. Tenho mais de 2 anos de
-        experiência em desenvolvimento de sistemas. Ouvir música, assistir
-        basquete e jogar badminton são minhas atividades favoritas no momento.
-        <br />
-        Programação é minha paixão e estou sempre ansioso para aprender mais.
+        Desenvolvedor de software com mais de 3 anos de experiência profissional na área. Possuo conhecimento em diversas linguagens de programação e frameworks para construir aplicações tanto de front-end quanto de back-end, com forte foco na entrega de soluções de alta qualidade. <br/>Apaixonado por tecnologia e sempre ávido por aprender e crescer no mundo em constante evolução do desenvolvimento de software.
       </>
     ),
   },

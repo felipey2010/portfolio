@@ -113,14 +113,6 @@ export const ResourcesData = {
           },
         },
         {
-          name: 'Envato',
-          url: 'https://themeforest.net/',
-          description: {
-            en: 'Free and premium themes for Bootstrap.',
-            pt: 'Temas gratuitos e premium para Bootstrap.',
-          },
-        },
-        {
           name: 'Unlayer',
           url: 'https://unlayer.com/',
           description: {
@@ -141,7 +133,15 @@ export const ResourcesData = {
       },
       resources: [
         {
-          name: 'Fuun Retrospectives',
+          name: 'Roadmap.sh',
+          url: 'https://roadmap.sh/',
+          description: {
+            en: 'A roadmap for developers to learn new skills.',
+            pt: 'Um roadmap para desenvolvedores aprenderem novas habilidades.',
+          },
+        },
+        {
+          name: 'Fun Retrospectives',
           url: 'https://www.funretrospectives.com/',
           description: {
             en: 'Retrospectives for software teams.',

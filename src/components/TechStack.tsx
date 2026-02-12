@@ -10,7 +10,7 @@ import {
   PostgreSQL,
   Springboot,
   TailwindCSS,
-  Flutter,
+  Flutter, Angular
 } from '@/components/svg/TechLogos'
 import { cn } from '@/lib/utils'
 import Marquee from './Marquee'
@@ -28,7 +28,8 @@ function TechStack({ className }: { className?: string }) {
     PostgreSQL,
     Maven,
     Github,
-    Flutter,
+    Flutter, 
+    Angular
   ]
 
   return (
