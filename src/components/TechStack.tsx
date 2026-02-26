@@ -39,7 +39,7 @@ function TechStack({ className }: { className?: string }) {
           <div
             key={'tech-' + index}
             className={cn(
-              'relative h-full w-fit mx-[4rem] flex items-center justify-start',
+              'relative h-full w-fit mx-16 flex items-center justify-start',
               className
             )}
           >

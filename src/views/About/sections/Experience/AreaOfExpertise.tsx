@@ -7,7 +7,7 @@ type Props = {
 
 function AreaOfExpertise({ selectedLanguage }: Props) {
   return (
-    <Card className="w-full p-4 shadow-sm border border-border">
+    <Card className="w-full p-4 shadow-xs border border-border">
       <CardContent className="p-0">
         <h2 className="flex items-center font-semibold">
           {

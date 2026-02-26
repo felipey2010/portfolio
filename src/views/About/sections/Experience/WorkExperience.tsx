@@ -7,7 +7,7 @@ type Props = {
 
 function WorkExperience({ selectedLanguage }: Props) {
   return (
-    <Card className="w-full shadow-sm border border-border p-4">
+    <Card className="w-full shadow-xs border border-border p-4">
       <CardContent className="p-0">
         <h2 className="flex items-center font-semibold">
           {

@@ -159,7 +159,7 @@ function ContactForm() {
                         selectedLanguage as keyof typeof ContactFormText.message.placeholder
                       ]
                     }
-                    className="min-h-[150px]"
+                    className="min-h-37.5"
                   />
                 </FormControl>
                 <FormMessage />

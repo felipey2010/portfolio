@@ -7,7 +7,7 @@ type Props = {
 
 function Technologies({ selectedLanguage }: Props) {
   return (
-    <Card className="w-full p-4 shadow-sm border border-border">
+    <Card className="w-full p-4 shadow-xs border border-border">
       <CardContent className="p-0">
         <div className="flex flex-col mb-2">
           <h2 className="font-semibold">

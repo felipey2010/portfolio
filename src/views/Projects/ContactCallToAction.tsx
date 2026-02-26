@@ -21,7 +21,7 @@ function ContactCallToAction({ language, content }: Props) {
     router.push('/about?tab=contact')
   }
   return (
-    <section className="w-full flex items-center justify-center py-4 min-h-[300px] bg-gray-100 dark:bg-gray-900 rounded-b-lg">
+    <section className="w-full flex items-center justify-center py-4 min-h-75 bg-gray-100 dark:bg-gray-900 rounded-b-lg">
       <div className="flex flex-col items-center space-y-4 text-center">
         <div className="space-y-2">
           <h2 className="text-2xl font-bold tracking-tighter">

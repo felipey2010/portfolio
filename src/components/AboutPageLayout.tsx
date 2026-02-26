@@ -48,7 +48,7 @@ export const Logo = () => {
       href="/"
       className="w-fit font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
-      <AppLogo className="h-5 w-6 fill-primary rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
+      <AppLogo className="h-5 w-6 fill-primary rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm shrink-0" />
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

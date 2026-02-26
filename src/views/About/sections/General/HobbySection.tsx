@@ -8,7 +8,7 @@ type Props = {
 
 function HobbySection({ selectedLanguage }: Props) {
   return (
-    <Card className="col-span-12 sm:col-span-6 p-4 shadow-sm border border-border">
+    <Card className="col-span-12 sm:col-span-6 p-4 shadow-xs border border-border">
       <CardContent className="p-0">
         <div className="flex items-center gap-2">
           <FaHeart className="text-primary" />

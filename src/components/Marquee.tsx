@@ -19,7 +19,7 @@ function Marquee({
         <div
           key={`marquee-${i}`}
           className={cn(
-            'flex shrink-0 items-center justify-center w-max animate-marquee [--duration:30s] [--gap:12px] [gap:var(--gap)]',
+            'flex shrink-0 items-center justify-center w-max animate-marquee [--duration:30s] [--gap:12px] gap-(--gap)',
             {
               'group-hover:[animation-play-state:paused]': pauseOnHover,
             }

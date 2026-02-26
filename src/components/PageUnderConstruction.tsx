@@ -25,7 +25,7 @@ function PageUnderConstruction() {
           }
         </p>
         <button
-          className="min-w-[100px] bg-primary hover:bg-primary/80 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:dark:ring-white focus:ring-black transition-colors duration-100 ease-in-out"
+          className="min-w-25 bg-primary hover:bg-primary/80 text-white py-2 px-4 rounded-lg focus:outline-hidden focus:ring-2 dark:focus:ring-white focus:ring-black transition-colors duration-100 ease-in-out"
           onClick={() => router.back()}
         >
           {

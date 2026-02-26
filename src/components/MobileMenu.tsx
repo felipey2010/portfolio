@@ -22,7 +22,7 @@ function MobileMenu() {
   const router = useRouter()
 
   return (
-    <Menubar className="md:hidden border-none shadow-sm">
+    <Menubar className="md:hidden border-none shadow-xs">
       <MenubarMenu>
         <MenubarTrigger name="Menu" className="text-foreground font-normal">
           Menu <MdKeyboardArrowDown className="ml-2" />

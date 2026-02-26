@@ -77,7 +77,7 @@ const FolderItem = ({
     <div>
       <button
         onClick={() => onToggle(category.id)}
-        className="flex items-center w-full text-left py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="flex items-center w-full text-left py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-900 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
         style={{ paddingLeft }}
         aria-expanded={isOpen}
       >
@@ -133,7 +133,7 @@ const CategoryItem = ({
           </DialogTrigger>
         </HoverCardTrigger>
         <HoverCardContent className="p-0 rounded-xl shadow-none border-none">
-          <Card className="p-0 shadow-sm border-border divide-y divide-border">
+          <Card className="p-0 shadow-xs border-border divide-y divide-border">
             <CardHeader className="p-3">
               <p className="text-sm">
                 {item.name[language as keyof typeof item.name]}

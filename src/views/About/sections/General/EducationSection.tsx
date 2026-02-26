@@ -18,7 +18,7 @@ type Props = {
 
 function EducationSection({ selectedLanguage }: Props) {
   return (
-    <Card className="col-span-12 p-4 shadow-sm border border-border">
+    <Card className="col-span-12 p-4 shadow-xs border border-border">
       <CardContent className="p-0">
         <div className="flex items-center gap-2">
           <IoSchoolSharp className="text-primary" />

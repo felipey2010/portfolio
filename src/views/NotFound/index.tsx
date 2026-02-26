@@ -18,7 +18,7 @@ function NotFoundView() {
             height={250}
             alt="erro"
             priority
-            className="w-full max-w-[350px]"
+            className="w-full max-w-87.5"
           />
         </div>
         <h1 className="text-2xl text-center text-primary">
@@ -37,7 +37,7 @@ function NotFoundView() {
         </h1>
         <Link
           href="/"
-          className="text-muted-foreground border border-primary hover:bg-primary hover:text-white focus:bg-primary focus:ring-4 focus:outline-none focus:ring-purple-600 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-200 ease-in-out"
+          className="text-muted-foreground border border-primary hover:bg-primary hover:text-white focus:bg-primary focus:ring-4 focus:outline-hidden focus:ring-purple-600 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2 transition-all duration-200 ease-in-out"
         >
           {
             PageNotFoundList.button[

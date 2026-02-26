@@ -20,7 +20,7 @@ function NotFound({ selectedLanguage }: Props) {
           }
         </h1>
       </div>
-      <div className="flex flex-1 items-center justify-center rounded-lg border border-border border-dashed shadow-sm">
+      <div className="flex flex-1 items-center justify-center rounded-lg border border-border border-dashed shadow-xs">
         <div className="flex flex-col items-center gap-2 text-center">
           <Image src={logistics} alt="404" width={240} height={240} />
           <h3 className="text-2xl font-bold tracking-tight">

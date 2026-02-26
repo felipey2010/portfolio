@@ -82,7 +82,7 @@ export default function ReportBug({ onClose, open, setOpen }: Props) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild />
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-106.25">
         <DialogHeader>
           <DialogTitle>
             {ReportBugList.name[language as keyof typeof ReportBugList.name]}
