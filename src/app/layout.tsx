@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/providers/ThemeProvider'
 import '@/styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import { geistMono, geistSans } from './fonts'
 
 const baseUrl =
   process.env.NEXT_PUBLIC_BASE_URL || 'https://dev-philip.vercel.app'
@@ -30,20 +30,6 @@ export const metadata: Metadata = {
     images: ['/opengraph-image.png', `${baseUrl}/assets/site.png`],
   },
 }
-
-const geistSans = localFont({
-  src: '../fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '400 500 700 900',
-  style: 'italic normal',
-})
-
-const geistMono = localFont({
-  src: '../fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '400 500 700 900',
-  style: 'italic normal',
-})
 
 export default function RootLayout({
   children,

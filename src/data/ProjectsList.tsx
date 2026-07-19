@@ -44,6 +44,29 @@ export const ProjectsList = [
     },
     children: [
       {
+        id: 'p1.0',
+        name: {
+          en: 'MentoringHub',
+          pt: 'MentoringHub',
+        },
+        description: {
+          en: 'A platform designed to serve as an environment for connecting mentors and mentees, providing useful mentoring resources such as virtual rooms, secure communication, calendar, and more',
+          pt: 'Uma plataforma com o propósito de servir como um ambiente de conexões de mentores e mentorados fornecendo recursos útils para mentoria como salas virtuais, comunicação segura, calendário e outros',
+        },
+        image: '/assets/mentoringhub.png',
+        tags: [
+          'next js',
+          'node js',
+          'express js',
+          'postgresql',
+          'api rest',
+          'prisma orm',
+          'next-auth',
+        ],
+        demoLink: 'https://mentoringhub-network.vercel.app/',
+        githubLink: '#',
+      },
+      {
         id: 'p1.1',
         name: {
           en: 'School games system',
@@ -81,7 +104,7 @@ export const ProjectsList = [
           'postgresql',
           'spring-security',
           'next js',
-          'API Rest',
+          'api rest',
         ],
         demoLink: '',
         githubLink: '#',

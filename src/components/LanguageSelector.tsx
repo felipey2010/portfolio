@@ -8,7 +8,29 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu'
-import { AvailableLanguages } from '@/data/LanguageList'
+
+const AvailableLanguages = {
+  buttonText: {
+    en: 'Change language',
+    pt: 'Mudar idioma',
+  },
+  languages: [
+    {
+      language: {
+        en: 'English',
+        pt: 'Inglês',
+      },
+      value: 'en',
+    },
+    {
+      language: {
+        en: 'Portuguese',
+        pt: 'Português',
+      },
+      value: 'pt',
+    },
+  ],
+}
 
 function LanguageSelector() {
   const { language, handleLanguageChange } = useLanguage()

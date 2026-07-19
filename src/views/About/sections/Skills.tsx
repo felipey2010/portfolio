@@ -4,7 +4,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { SkillsList } from '@/data/AboutPageList'
 import { cn, generateRandomNumber } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { MutableRefObject, useRef, useState } from 'react'
@@ -17,6 +16,79 @@ type LanguageOptionsType = {
 type SkillType = {
   title: LanguageOptionsType
   description: LanguageOptionsType
+}
+
+const SkillsList = {
+  title: {
+    en: 'Skills',
+    pt: 'Habilidades',
+  },
+  description: {
+    en: 'When it comes to skills, I have just a few in mind. Feel free to play around with them',
+    pt: 'Quando se trata de habilidades, eu tenho apenas poucas em mente. Sinta-se à vontade para brincar com elas',
+  },
+  skills: [
+    {
+      title: {
+        en: 'Agile Methodology',
+        pt: 'Metodologia ágil',
+      },
+      description: {
+        en: 'A project management approach that emphasizes flexibility, collaboration, and customer satisfaction.',
+        pt: 'Uma abordagem de gerenciamento de projetos que enfatiza a flexibilidade, a colaboração e a satisfação do cliente.',
+      },
+    },
+    {
+      title: {
+        en: 'Attention to details',
+        pt: 'Atenção aos detalhes',
+      },
+      description: {
+        en: 'Aim at achieving precise results according to the project requirements.',
+        pt: 'Objetiva-se a atingir resultados precisos de acordo com as exigências do projeto.',
+      },
+    },
+    {
+      title: {
+        en: 'Continuous learning',
+        pt: 'Aprendizagem contínua',
+      },
+      description: {
+        en: 'Enthusiastic about quickly understanding new technologies to keep up to date.',
+        pt: 'Entusiasta em compreender rapidamente novas tecnologias para manter atualizado.',
+      },
+    },
+    {
+      title: {
+        en: 'Team and individual work',
+        pt: 'Trabalho em equipe e individual',
+      },
+      description: {
+        en: 'Ability to adapt easily to both work in a team and individually.',
+        pt: 'Habilidade de adaptar facilmente tanto ao trabalho em equipe como individualmente.',
+      },
+    },
+    {
+      title: {
+        en: 'Creativity',
+        pt: 'Criatividade',
+      },
+      description: {
+        en: 'Ability to find unique solutions to problems and for designing solutions that are both functional and visually appealing.',
+        pt: 'Habilidade de encontrar soluções únicas para problemas e de projetar soluções que são funcionais e visualmente atraentes.',
+      },
+    },
+    {
+      title: {
+        en: 'Leadership',
+        pt: 'Liderança',
+      },
+      description: {
+        en: 'Possess skills in communication, decision-making, resolutions of problems, motivating, team and time management.',
+        pt: 'Possui habilidades em comunicação, tomada de decisão, resolução de problemas, motivação, gerenciamento de equipe e tempo.',
+      },
+    },
+  ],
 }
 
 function Skills({ selectedLanguage = 'en' }: { selectedLanguage: string }) {

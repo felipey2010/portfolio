@@ -1,9 +1,16 @@
-import { ProfileDetailsList } from '@/data/AboutPageList'
 import { profilePic } from '@/data/Images'
 import Image from 'next/image'
 
 type Props = {
   selectedLanguage: string
+}
+const title = {
+  en: "Hi, I'm Philip Akpanyi",
+  pt: 'Oi, eu sou Philip Akpanyi',
+}
+const description = {
+  en: 'A system developer with passion for creating innovative and user-friendly solutions.',
+  pt: 'Um desenvolvedor de sistemas com paixão em criar soluções inovadoras e fáceis de usar.',
 }
 
 function ProfileSection({ selectedLanguage }: Props) {
@@ -18,18 +25,10 @@ function ProfileSection({ selectedLanguage }: Props) {
       />
       <div className="flex flex-col items-center md:items-start text-center md:text-start gap-1">
         <h1 className="text-2xl font-semibold mb-2">
-          {
-            ProfileDetailsList.title[
-              selectedLanguage as keyof typeof ProfileDetailsList.title
-            ]
-          }
+          {title[selectedLanguage as keyof typeof title]}
         </h1>
         <p className="text-base text-justify text-muted-foreground">
-          {
-            ProfileDetailsList.description[
-              selectedLanguage as keyof typeof ProfileDetailsList.description
-            ]
-          }
+          {description[selectedLanguage as keyof typeof description]}
         </p>
       </div>
     </section>

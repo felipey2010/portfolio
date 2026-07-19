@@ -9,9 +9,84 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
-import { MenuList, ResourceList } from '@/data/MenuList'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { BsClipboard2, BsCode, BsHouse, BsPerson } from 'react-icons/bs'
+
+const MenuList = [
+  {
+    name: {
+      en: 'Home',
+      pt: 'Início',
+    },
+    path: '/',
+    icon: BsHouse,
+  },
+  {
+    name: {
+      en: 'About',
+      pt: 'Sobre',
+    },
+    path: '/about',
+    icon: BsPerson,
+  },
+  {
+    name: {
+      en: 'Projects',
+      pt: 'Projetos',
+    },
+    path: '/projects',
+    icon: BsClipboard2,
+  },
+  // {
+  //   name: "Resources",
+  //   path: "/resources",
+  //   icon: BsCode,
+  // },
+]
+
+const ResourceList = {
+  name: {
+    en: 'Resources',
+    pt: 'Recursos',
+  },
+  icon: BsCode,
+  subItems: [
+    {
+      title: {
+        en: 'Blog',
+        pt: 'Blog',
+      },
+      href: '/blog',
+      description: {
+        en: 'Random ideas, tools and resources I found',
+        pt: 'Ideias, ferramentas e recursos que encontrei',
+      },
+    },
+    {
+      title: {
+        en: 'Resources',
+        pt: 'Recursos',
+      },
+      href: '/resources',
+      description: {
+        en: 'A collection of useful resources',
+        pt: 'Uma coleção de recursos úteis',
+      },
+    },
+    {
+      title: {
+        en: 'Privacy Policy',
+        pt: 'Política de Privacidade',
+      },
+      href: '/privacy-policy',
+      description: {
+        en: 'Know what data we collect and how we use it.',
+        pt: 'Saiba os dados que coletamos e como os usamos.',
+      },
+    },
+  ],
+}
 
 export default function Menu() {
   const { language } = useLanguage()
@@ -20,7 +95,7 @@ export default function Menu() {
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         {MenuList.map((menu) => (
-          <NavigationMenuItem key={menu.name.en}>
+          <NavigationMenuItem key={menu.name.en} id={menu.name.en}>
             <NavigationMenuLink
               asChild
               className={navigationMenuTriggerStyle()}
@@ -31,8 +106,8 @@ export default function Menu() {
             </NavigationMenuLink>
           </NavigationMenuItem>
         ))}
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>
+        <NavigationMenuItem id="menu-resource-id">
+          <NavigationMenuTrigger id="nav-trigger-id">
             {ResourceList.name[language as keyof typeof ResourceList.name]}
           </NavigationMenuTrigger>
           <NavigationMenuContent>

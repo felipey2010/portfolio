@@ -1,9 +1,31 @@
 'use client'
 import { sad } from '@/data/Images'
-import { PageNotFoundList } from '@/data/SystemList'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import Image from 'next/image'
 import Link from 'next/link'
+
+const PageNotFoundList = {
+  header: {
+    en: 'Page 404',
+    pt: 'Página 404',
+  },
+  title: {
+    en: 'Oops! Something went wrong...',
+    pt: 'Oops! Algo deu errado...',
+  },
+  description: {
+    en: `This page is hidden in a broken link labyrinth. \nGood luck finding the exit!`,
+    pt: `Essa página está escondida em um labirinto de links quebrados. \nBoa sorte encontrando a saída!`,
+  },
+  button: {
+    en: 'Go to home',
+    pt: 'Pagina inicial',
+  },
+  keywords: {
+    en: '404, error, page not found, broken link, labyrinth',
+    pt: '404, erro, página não encontrada, link quebrado, labirinto',
+  },
+}
 
 function NotFoundView() {
   const { language } = useLanguage()

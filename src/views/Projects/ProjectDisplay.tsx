@@ -56,7 +56,7 @@ function ProjectDisplay({ project, language }: Props) {
           {project.tags.map((tag, tagIndex) => (
             <span
               key={tagIndex}
-              className="px-2 py-1 text-xs font-medium text-white dark:text-black bg-primary rounded-full"
+              className="px-2 py-1 text-xs font-medium text-white dark:text-black bg-primary rounded-full lowercase"
             >
               {tag}
             </span>

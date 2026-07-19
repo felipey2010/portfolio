@@ -9,12 +9,57 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from '@/components/ui/menubar'
-import { MobileMenuList } from '@/data/MobileMenuList'
 import { cn } from '@/lib/utils'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { usePathname, useRouter } from 'next/navigation'
 import { BsCheck } from 'react-icons/bs'
 import { MdKeyboardArrowDown } from 'react-icons/md'
+
+const MobileMenuList = [
+  {
+    name: {
+      en: 'Home',
+      pt: 'Início',
+    },
+    href: '/',
+  },
+  {
+    name: {
+      en: 'About',
+      pt: 'Sobre',
+    },
+    href: '/about',
+  },
+  {
+    name: {
+      en: 'Projects',
+      pt: 'Projetos',
+    },
+    href: '/projects',
+  },
+  {
+    name: {
+      en: 'Resources',
+      pt: 'recursos',
+    },
+    subitems: [
+      {
+        title: {
+          en: 'Blog',
+          pt: 'Blog',
+        },
+        href: '/blog',
+      },
+      {
+        title: {
+          en: 'Privacy Policy',
+          pt: 'Política de Privacidade',
+        },
+        href: '/privacy-policy',
+      },
+    ],
+  },
+]
 
 function MobileMenu() {
   const { language } = useLanguage()

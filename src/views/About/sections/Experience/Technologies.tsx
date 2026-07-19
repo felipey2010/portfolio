@@ -1,8 +1,50 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { TechnologiesList } from '@/data/AboutPageList'
 
 type Props = {
   selectedLanguage: string
+}
+
+const TechnologiesList = {
+  label: {
+    en: 'Technologies',
+    pt: 'Tecnologias',
+  },
+  description: {
+    en: 'The list of some of the technologies I work with',
+    pt: 'A lista de algumas das tecnologias com que eu trabalho',
+  },
+  technologies: [
+    {
+      name: 'Javascript ( Next JS)',
+    },
+    {
+      name: 'Java (Spring framework)',
+    },
+    {
+      name: 'Node JS (REST APIs)',
+    },
+    {
+      name: 'Angular JS',
+    },
+    {
+      name: 'Flutter',
+    },
+    {
+      name: 'PostgreSQL',
+    },
+    {
+      name: 'Tomcat & JBoss/Wildfly',
+    },
+    {
+      name: 'Git',
+    },
+    {
+      name: 'Maven',
+    },
+    {
+      name: 'JIRA',
+    },
+  ],
 }
 
 function Technologies({ selectedLanguage }: Props) {

@@ -1,19 +1,72 @@
 import { Card, CardContent } from '@/components/ui/card'
-import {
-  EducationList,
-  GENERAL_PAGE_INFO,
-  HobbyList,
-  LanguageList,
-  OriginList,
-  ProfileDetailsList,
-} from '@/data/AboutPageList'
-import { profilePic } from '@/data/Images'
-import Image from 'next/image'
-import { FaFlag, FaHeart } from 'react-icons/fa'
-import { IoLanguageSharp, IoSchoolSharp } from 'react-icons/io5'
+import { IoSchoolSharp } from 'react-icons/io5'
 
 type Props = {
   selectedLanguage: string
+}
+const EducationList = {
+  label: {
+    en: 'Education',
+    pt: 'Educação',
+  },
+  schools: [
+    {
+      level: {
+        en: 'Bachelor',
+        pt: 'Bacharelado',
+      },
+      institution: {
+        en: 'Federal University of Roraima - (UFRR)',
+        pt: 'Universidade Federal de Roraima - (UFRR)',
+      },
+      status: {
+        en: 'July, 2026',
+        pt: 'Julho, 2026',
+      },
+      location: {
+        en: 'Roraima - Brazil',
+        pt: 'Roraima - Brasil',
+      },
+    },
+    {
+      level: {
+        en: 'Senior High',
+        pt: 'Ensino médio',
+      },
+      institution: {
+        en: 'Ghana Secondary Technical School - (G.S.T.S)',
+        pt: 'Ghana Secondary Technical School - (G.S.T.S)',
+      },
+      status: {
+        en: 'Completed',
+        pt: 'Completo',
+      },
+      date: '2008 - 2012',
+      location: {
+        en: 'Takoradi - Ghana',
+        pt: 'Takoradi - Gana',
+      },
+    },
+    {
+      level: {
+        en: 'Junior High',
+        pt: 'Ensino básico',
+      },
+      institution: {
+        en: 'Pentecost Preparatory School - (P.P.S)',
+        pt: 'Pentecost Preparatory School - (P.P.S)',
+      },
+      status: {
+        en: 'Completed',
+        pt: 'Completo',
+      },
+      date: '2005 - 2008',
+      location: {
+        en: 'Takoradi - Ghana',
+        pt: 'Takoradi - Gana',
+      },
+    },
+  ],
 }
 
 function EducationSection({ selectedLanguage }: Props) {
@@ -25,7 +78,7 @@ function EducationSection({ selectedLanguage }: Props) {
           <h2 className="flex items-center">
             {
               EducationList.label[
-                selectedLanguage as keyof typeof OriginList.label
+                selectedLanguage as keyof typeof EducationList.label
               ]
             }
           </h2>
@@ -44,23 +97,19 @@ function EducationSection({ selectedLanguage }: Props) {
                   <time className="text-sm">{item.date}</time>
                 ) : (
                   <p className="text-sm">
-                    {
-                      item.status[
-                        selectedLanguage as keyof typeof OriginList.label
-                      ]
-                    }
+                    {item.status[selectedLanguage as keyof typeof item.status]}
                   </p>
                 )}
               </div>
               <h4 className="font-semibold">
                 {
                   item.institution[
-                    selectedLanguage as keyof typeof OriginList.label
+                    selectedLanguage as keyof typeof item.institution
                   ]
                 }
               </h4>
               <p className="text-sm">
-                {item.level[selectedLanguage as keyof typeof OriginList.label]}
+                {item.level[selectedLanguage as keyof typeof item.level]}
               </p>
             </li>
           ))}

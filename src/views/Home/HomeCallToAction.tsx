@@ -1,18 +1,23 @@
 'use client'
 import CVDownloader from '@/components/CVDownloader'
 import { Button } from '@/components/ui/button'
-import { LanguageType } from '@/types'
 import { useRouter } from 'next/navigation'
 
 type Props = {
   selectedLanguage: string
-  buttonContent: {
-    contactMe: LanguageType
-    downloadCV: LanguageType
-  }
+}
+const buttonContent = {
+  contactMe: {
+    en: 'Contact me',
+    pt: 'Contate-me',
+  },
+  downloadCV: {
+    en: 'Check CV',
+    pt: 'Conferir CV',
+  },
 }
 
-function HomeCallToAction({ selectedLanguage, buttonContent }: Props) {
+function HomeCallToAction({ selectedLanguage }: Props) {
   const router = useRouter()
 
   return (

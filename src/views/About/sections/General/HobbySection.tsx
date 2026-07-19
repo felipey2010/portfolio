@@ -1,9 +1,37 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { HobbyList, OriginList } from '@/data/AboutPageList'
 import { FaHeart } from 'react-icons/fa'
 
 type Props = {
   selectedLanguage: string
+}
+
+const HobbyList = {
+  label: {
+    en: 'Hobbies',
+    pt: 'Passatempo',
+  },
+  hobbies: [
+    {
+      en: 'Listen to music',
+      pt: 'Ouvir música',
+    },
+    {
+      en: 'Swim',
+      pt: 'Nadar',
+    },
+    {
+      en: 'Watch basketball',
+      pt: 'Assistir basquete',
+    },
+    {
+      en: 'Play games',
+      pt: 'Jogar jogos',
+    },
+    {
+      en: 'Ride motorbike',
+      pt: 'Andar de moto',
+    },
+  ],
 }
 
 function HobbySection({ selectedLanguage }: Props) {
@@ -13,7 +41,7 @@ function HobbySection({ selectedLanguage }: Props) {
         <div className="flex items-center gap-2">
           <FaHeart className="text-primary" />
           <h2 className="flex items-center">
-            {HobbyList.label[selectedLanguage as keyof typeof OriginList.label]}
+            {HobbyList.label[selectedLanguage as keyof typeof HobbyList.label]}
           </h2>
         </div>
         <ul className="list-disc ps-6">
@@ -22,7 +50,7 @@ function HobbySection({ selectedLanguage }: Props) {
               key={`hobby-${index}`}
               className="text-sm text-muted-foreground"
             >
-              {item[selectedLanguage as keyof typeof OriginList.label]}
+              {item[selectedLanguage as keyof typeof item]}
             </li>
           ))}
         </ul>

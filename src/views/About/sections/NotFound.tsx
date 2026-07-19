@@ -1,11 +1,29 @@
 import { Button } from '@/components/ui/button'
-import { AboutPageNotFoundList } from '@/data/AboutPageList'
 import { logistics } from '@/data/Images'
 import Image from 'next/image'
 import { redirect } from 'next/navigation'
 
 type Props = {
   selectedLanguage: string
+}
+
+const AboutPageNotFoundList = {
+  label: {
+    en: 'Page Not Found',
+    pt: 'Página Não encontrada',
+  },
+  title: {
+    en: 'Oops...Page not found',
+    pt: 'Opaa...Página não encontrada',
+  },
+  description: {
+    en: `Our digital librarian has misplaced your requested page. \nFear not, we are on the case!`,
+    pt: `Nosso bibliotecário digital perdeu a página solicitada. \nNão tema, estamos cuidando do caso!`,
+  },
+  button: {
+    en: 'Go back home',
+    pt: 'Página inicial',
+  },
 }
 
 function NotFound({ selectedLanguage }: Props) {

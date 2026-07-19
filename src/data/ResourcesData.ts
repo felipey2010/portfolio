@@ -1,5 +1,3 @@
-import { en } from '@faker-js/faker'
-
 export const ResourcesData = {
   title: {
     en: 'Developer Resources',

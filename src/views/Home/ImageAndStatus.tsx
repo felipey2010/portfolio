@@ -1,13 +1,17 @@
 import { cn } from '@/lib/utils'
-import { LanguageType } from '@/types'
 
 type Props = {
   selectedLanguage: string
-  statusText: LanguageType
-  status: boolean
 }
 
-function ImageAndStatus({ selectedLanguage, statusText, status }: Props) {
+const status = true
+
+const statusText = {
+  en: 'Looking for new opportunities...',
+  pt: 'Buscando novas oportunidades...',
+}
+
+function ImageAndStatus({ selectedLanguage }: Props) {
   return (
     <div className="w-full flex flex-col items-center gap-2">
       <div className="flex items-center gap-4 border border-border bg-border py-0.5 px-2 rounded-xl">

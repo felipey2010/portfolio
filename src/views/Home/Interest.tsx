@@ -1,12 +1,15 @@
-import { LanguageType } from '@/types'
 import { RiSparkling2Fill } from 'react-icons/ri'
 
 type Props = {
   selectedLanguage: string
-  profession: LanguageType
 }
 
-function Interest({ selectedLanguage, profession }: Props) {
+const profession = {
+  en: 'Systems Analyst',
+  pt: 'Analista de Sistemas',
+}
+
+function Interest({ selectedLanguage }: Props) {
   return (
     <div className="w-full flex items-center justify-center">
       <span className="flex flex-col sm:flex-row items-center text-center justify-center gap-4 p-4 rounded-xl bg-card-foreground/85 border-border text-input">

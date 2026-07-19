@@ -1,8 +1,18 @@
 'use client'
-import { FooterList } from '@/data/FooterList'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import Clock from './Clock'
 import DateDisplay from './DateDisplay'
+
+const FooterList = {
+  rightReserved: {
+    en: '© 2026 - All right reserved',
+    pt: '© 2026 - Todos os direitos reservados',
+  },
+  madeWithLove: {
+    en: 'Made with ❤️ by Philip',
+    pt: 'Feito com ❤️ por Philip',
+  },
+}
 
 function Footer() {
   const { language } = useLanguage()

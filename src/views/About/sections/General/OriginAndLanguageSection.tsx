@@ -1,7 +1,46 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { LanguageList, OriginList } from '@/data/AboutPageList'
 import { FaFlag } from 'react-icons/fa'
 import { IoLanguageSharp } from 'react-icons/io5'
+
+const OriginList = {
+  label: {
+    en: 'Country of Origin',
+    pt: 'País de Origem',
+  },
+  country: {
+    en: 'Ghana - West Africa',
+    pt: 'Gana - África Ocidental',
+  },
+}
+
+const LanguageList = {
+  label: {
+    en: 'Languages',
+    pt: 'Línguas faladas',
+  },
+  languages: [
+    {
+      language: {
+        en: 'English',
+        pt: 'Inglês',
+      },
+      level: {
+        en: 'Native',
+        pt: 'Nativo',
+      },
+    },
+    {
+      language: {
+        en: 'Portuguese',
+        pt: 'Português',
+      },
+      level: {
+        en: 'Fluent',
+        pt: 'Fluente',
+      },
+    },
+  ],
+}
 
 type Props = {
   selectedLanguage: string
@@ -36,7 +75,7 @@ function OriginAndLanguageSection({ selectedLanguage }: Props) {
             <h2 className="flex items-center">
               {
                 LanguageList.label[
-                  selectedLanguage as keyof typeof OriginList.label
+                  selectedLanguage as keyof typeof LanguageList.label
                 ]
               }
             </h2>
@@ -47,13 +86,8 @@ function OriginAndLanguageSection({ selectedLanguage }: Props) {
                 key={`language-${index}`}
                 className="text-sm text-muted-foreground"
               >
-                {
-                  item.language[
-                    selectedLanguage as keyof typeof OriginList.label
-                  ]
-                }{' '}
-                -{' '}
-                {item.level[selectedLanguage as keyof typeof OriginList.label]}
+                {item.language[selectedLanguage as keyof typeof item.language]}{' '}
+                - {item.level[selectedLanguage as keyof typeof item.level]}
               </li>
             ))}
           </ul>
