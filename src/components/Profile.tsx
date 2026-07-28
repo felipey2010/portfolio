@@ -25,11 +25,19 @@ function Profile() {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" size="icon" className="rounded-full">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="rounded-full"
+            aria-label={
+              ProfileList.title[language as keyof typeof ProfileList.title]
+            }
+          >
             <Avatar className="h-9 w-9">
               <AvatarImage
                 src="https://avatars.githubusercontent.com/u/24297997?v=4"
-                alt="profile"
+                alt=""
+                aria-hidden="true"
               />
               <AvatarFallback>PMA</AvatarFallback>
             </Avatar>

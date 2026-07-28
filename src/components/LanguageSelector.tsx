@@ -47,6 +47,11 @@ function LanguageSelector() {
               language as keyof typeof AvailableLanguages.buttonText
             ]
           }
+          aria-label={
+            AvailableLanguages.buttonText[
+              language as keyof typeof AvailableLanguages.buttonText
+            ]
+          }
         >
           {language === 'en' ? (
             <USFlag width={16} height={16} />

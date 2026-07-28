@@ -54,6 +54,7 @@ export function ThemeToggle() {
           size="icon"
           className="rounded-full!"
           title={ThemeList.title[language as keyof typeof ThemeList.title]}
+          aria-label={ThemeList.title[language as keyof typeof ThemeList.title]}
         >
           <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
           <MoonIcon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

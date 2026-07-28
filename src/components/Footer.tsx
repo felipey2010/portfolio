@@ -18,7 +18,11 @@ function Footer() {
   const { language } = useLanguage()
 
   return (
-    <div className="w-full min-h-6 bg-card flex items-center justify-center sm:justify-between gap-2 text-xs px-6">
+    <footer
+      className="w-full min-h-6 bg-card flex items-center justify-center sm:justify-between gap-2 text-xs px-6"
+      role="contentinfo"
+      aria-label="Site footer"
+    >
       <div className="hidden sm:block">
         <h2 className="font-normal">
           {
@@ -41,7 +45,7 @@ function Footer() {
         <DateDisplay />
         <Clock />
       </div>
-    </div>
+    </footer>
   )
 }
 

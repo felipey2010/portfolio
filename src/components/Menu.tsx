@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/navigation-menu'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { BsClipboard2, BsCode, BsHouse, BsPerson } from 'react-icons/bs'
 
 const MenuList = [
@@ -90,15 +91,17 @@ const ResourceList = {
 
 export default function Menu() {
   const { language } = useLanguage()
+  const pathname = usePathname()
 
   return (
-    <NavigationMenu className="hidden md:flex">
+    <NavigationMenu className="hidden md:flex" aria-label="Primary">
       <NavigationMenuList>
         {MenuList.map((menu) => (
           <NavigationMenuItem key={menu.name.en} id={menu.name.en}>
             <NavigationMenuLink
               asChild
               className={navigationMenuTriggerStyle()}
+              aria-current={pathname === menu.path ? 'page' : undefined}
             >
               <Link href={menu.path}>
                 {menu.name[language as keyof typeof menu.name]}
@@ -107,7 +110,12 @@ export default function Menu() {
           </NavigationMenuItem>
         ))}
         <NavigationMenuItem id="menu-resource-id">
-          <NavigationMenuTrigger id="nav-trigger-id">
+          <NavigationMenuTrigger
+            id="nav-trigger-id"
+            aria-label={
+              ResourceList.name[language as keyof typeof ResourceList.name]
+            }
+          >
             {ResourceList.name[language as keyof typeof ResourceList.name]}
           </NavigationMenuTrigger>
           <NavigationMenuContent>

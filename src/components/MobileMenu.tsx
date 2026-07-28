@@ -67,9 +67,15 @@ function MobileMenu() {
   const router = useRouter()
 
   return (
-    <Menubar className="md:hidden border-none shadow-xs">
+    <Menubar
+      className="md:hidden border-none shadow-xs"
+      aria-label="Mobile navigation"
+    >
       <MenubarMenu>
-        <MenubarTrigger name="Menu" className="text-foreground font-normal">
+        <MenubarTrigger
+          aria-label="Open mobile menu"
+          className="text-foreground font-normal"
+        >
           Menu <MdKeyboardArrowDown className="ml-2" />
         </MenubarTrigger>
         <MenubarContent className="border-border">
@@ -77,7 +83,10 @@ function MobileMenu() {
             const mennuName = menu.name[language as keyof typeof menu.name]
             return menu.subitems ? (
               <MenubarSub key={`mobile-menu-${index}`}>
-                <MenubarSubTrigger className="text-foreground font-normal">
+                <MenubarSubTrigger
+                  className="text-foreground font-normal"
+                  aria-label={`${mennuName} submenu`}
+                >
                   {mennuName}
                 </MenubarSubTrigger>
                 <MenubarSubContent className="border-border">
@@ -86,6 +95,9 @@ function MobileMenu() {
                       key={`mobile-menu-subitem-${index}`}
                       onClick={() => router.push(subitem.href)}
                       className={cn(pathname === subitem.href && 'font-bold')}
+                      aria-current={
+                        pathname === subitem.href ? 'page' : undefined
+                      }
                     >
                       {pathname === subitem.href && (
                         <BsCheck className="mr-1" />
@@ -100,6 +112,7 @@ function MobileMenu() {
                 key={`menu-${index}`}
                 className={cn(pathname === menu.href && 'font-bold')}
                 onClick={() => router.push(menu.href)}
+                aria-current={pathname === menu.href ? 'page' : undefined}
               >
                 {pathname === menu.href && <BsCheck className="mr-1" />}
                 {mennuName}
