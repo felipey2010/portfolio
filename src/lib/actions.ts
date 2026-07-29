@@ -36,19 +36,19 @@ export async function sendContactEmail(contact: ContactFormSchemaType) {
   return { success: true }
 }
 
-export async function sendBugReportEmail(contact: BugReportSchemaType) {
-  const result = BugReportSchema.safeParse(contact)
+export async function sendBugReportEmail(bug: BugReportSchemaType) {
+  const result = BugReportSchema.safeParse(bug)
   const destinationEmail = process.env.NEXT_PUBLIC_EMAIL?.toString()!
 
   if (result.error) {
     throw Error('Invalid contact form data')
   }
-  const { message } = result.data
+  const { message, contact } = result.data
   const { data, error } = await resend.emails.send({
     from: 'Portfolio Site <onboarding@resend.dev>',
     to: [destinationEmail],
     subject: 'New Bug Report',
-    react: BugReportTemplate({ message }),
+    react: BugReportTemplate({ message, contact: contact?.trim() || '' }),
   })
 
   if (!data || error) {

@@ -46,7 +46,7 @@ function Profile() {
             </span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent align="end">
           {/* {ProfileList.profile.map((profile) => (
             <DropdownMenuItem key={profile.name.en}>
               {<profile.icon className="mr-2 h-4 w-4" />}

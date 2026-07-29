@@ -8,6 +8,7 @@ export const ContactFormSchema = z.object({
 
 export const BugReportSchema = z.object({
   message: z.string().min(2).max(500),
+  contact: z.string().max(100).optional().or(z.literal('')),
 })
 
 export type ContactFormSchemaType = z.infer<typeof ContactFormSchema>

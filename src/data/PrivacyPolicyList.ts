@@ -3,6 +3,10 @@ export const PrivacyPolicyList = {
     en: 'Privacy Policy',
     pt: 'Política de Privacidade',
   },
+  lastUpdated: {
+    en: 'Last updated: July 29, 2026',
+    pt: 'Última atualização: 29 de julho de 2026',
+  },
   about: {
     en: 'About This Site',
     pt: 'Sobre Este Site',
@@ -61,6 +65,56 @@ export const PrivacyPolicyList = {
     description: {
       en: 'You have the right to access, modify, or delete any personal data we may hold. If you have any concerns or requests regarding your data, please contact us.',
       pt: 'Você tem o direito de acessar, modificar ou excluir qualquer dado pessoal que possamos manter. Se você tiver qualquer preocupação ou solicitação em relação aos seus dados, entre em contato conosco.',
+    },
+  },
+  contact: {
+    title: {
+      en: 'Contact Information',
+      pt: 'Informações de Contato',
+    },
+    description: {
+      en: 'If you have questions about this policy or would like to request access, correction, deletion, or limitation of your data, please use the contact form or the contact details available on this website.',
+      pt: 'Se você tiver dúvidas sobre esta política ou quiser solicitar acesso, correção, exclusão ou limitação dos seus dados, use o formulário de contato ou os detalhes de contato disponíveis neste site.',
+    },
+  },
+  thirdPartyServices: {
+    title: {
+      en: 'Third-Party Services',
+      pt: 'Serviços de Terceiros',
+    },
+    description: {
+      en: 'This website may use third-party services such as analytics tools and email delivery providers. These services may process limited information on our behalf, subject to their own privacy policies.',
+      pt: 'Este site pode usar serviços de terceiros, como ferramentas de analytics e provedores de envio de e-mails. Esses serviços podem processar informações limitadas em nosso nome, sujeitos às suas próprias políticas de privacidade.',
+    },
+  },
+  retention: {
+    title: {
+      en: 'Data Retention',
+      pt: 'Retenção de Dados',
+    },
+    description: {
+      en: 'We keep personal information only for as long as necessary to respond to your message, improve the website, or comply with legal obligations. Cookies and analytics data may be retained according to the settings of the services used.',
+      pt: 'Mantemos as informações pessoais apenas pelo tempo necessário para responder à sua mensagem, melhorar o site ou cumprir obrigações legais. Cookies e dados de analytics podem ser retidos conforme as configurações dos serviços utilizados.',
+    },
+  },
+  security: {
+    title: {
+      en: 'Security',
+      pt: 'Segurança',
+    },
+    description: {
+      en: 'We take reasonable technical and organizational measures to protect the information we collect, although no system can be guaranteed to be completely immune to risks.',
+      pt: 'Tomamos medidas técnicas e organizacionais razoáveis para proteger as informações que coletamos, embora nenhum sistema possa ser garantido como totalmente imune a riscos.',
+    },
+  },
+  children: {
+    title: {
+      en: "Children's Privacy",
+      pt: 'Privacidade das Crianças',
+    },
+    description: {
+      en: 'This website is not intended for children under the age of 13, and we do not knowingly collect personal information from them.',
+      pt: 'Este site não é destinado a crianças menores de 13 anos e não coletamos intencionalmente informações pessoais delas.',
     },
   },
   changeAlert: {

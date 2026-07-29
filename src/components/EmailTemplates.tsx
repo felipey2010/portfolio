@@ -16,6 +16,7 @@ interface ContactEmailTemplateProps {
 
 interface BugReportTemplateProps {
   message: string
+  contact?: string
 }
 
 export const ContactEmailTemplate: React.FC<
@@ -49,6 +50,7 @@ export const ContactEmailTemplate: React.FC<
 
 export const BugReportTemplate: React.FC<Readonly<BugReportTemplateProps>> = ({
   message,
+  contact,
 }) => (
   <Html>
     <Preview>New Bug Report</Preview>
@@ -64,6 +66,11 @@ export const BugReportTemplate: React.FC<Readonly<BugReportTemplateProps>> = ({
         <Text className="text-gray-700 whitespace-pre-line">
           <strong>Bug:</strong> {message}
         </Text>
+        {contact ? (
+          <Text className="text-gray-700 whitespace-pre-line">
+            <strong>Contact:</strong> {contact}
+          </Text>
+        ) : null}
       </div>
     </Body>
   </Html>

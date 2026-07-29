@@ -57,6 +57,16 @@ export const ReportBugList = {
     en: 'Describe the bug',
     pt: 'Descreva o bug',
   },
+  contactInfo: {
+    label: {
+      en: 'Contact info (optional)',
+      pt: 'Informação de contato (opcional)',
+    },
+    placeholder: {
+      en: 'Email, LinkedIn, or phone number',
+      pt: 'E-mail, LinkedIn ou telefone',
+    },
+  },
   submission: {
     success: {
       title: {

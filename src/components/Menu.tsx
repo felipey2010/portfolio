@@ -103,7 +103,7 @@ export default function Menu() {
               className={navigationMenuTriggerStyle()}
               aria-current={pathname === menu.path ? 'page' : undefined}
             >
-              <Link href={menu.path}>
+              <Link href={menu.path} id={`link-${menu.name.en}`}>
                 {menu.name[language as keyof typeof menu.name]}
               </Link>
             </NavigationMenuLink>

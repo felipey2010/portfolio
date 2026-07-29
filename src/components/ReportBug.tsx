@@ -23,6 +23,7 @@ import { BugReportSchema, BugReportSchemaType } from '@/schemas'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Dispatch, SetStateAction, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
 import { toast } from './ui/use-toast'
 import { LoaderCircle } from 'lucide-react'
@@ -41,6 +42,7 @@ export default function ReportBug({ onClose, open, setOpen }: Props) {
     resolver: zodResolver(BugReportSchema),
     defaultValues: {
       message: '',
+      contact: '',
     },
   })
 
@@ -121,6 +123,38 @@ export default function ReportBug({ onClose, open, setOpen }: Props) {
                           ]
                         }
                         required
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={control}
+                disabled={loading}
+                name="contact"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel htmlFor="_contact">
+                      {
+                        ReportBugList.contactInfo.label[
+                          language as keyof typeof ReportBugList.contactInfo.label
+                        ]
+                      }
+                    </FormLabel>
+                    <FormControl>
+                      <Input
+                        id="_contact"
+                        type="text"
+                        maxLength={100}
+                        autoComplete="email"
+                        placeholder={
+                          ReportBugList.contactInfo.placeholder[
+                            language as keyof typeof ReportBugList.contactInfo.placeholder
+                          ]
+                        }
+                        {...field}
                       />
                     </FormControl>
                     <FormMessage />
