@@ -67,8 +67,8 @@ export const WorkExperienceList = {
     },
     areas: [
       {
-        en: 'System Development',
-        pt: 'Desenvolvimento de Sistemas',
+        en: 'Systems Analysis and Development',
+        pt: 'Análise e Desenvolvimento de Sistemas',
       },
     ],
   },
@@ -426,6 +426,44 @@ export const WorkExperienceList = {
         {
           en: 'Creating test cases and performing tests to ensure the quality of the product',
           pt: 'Criar casos de teste e realizar testes para garantir a qualidade do produto',
+        },
+      ],
+    },
+    {
+      position: {
+        en: 'Systems Analyst and Developer',
+        pt: 'Analista de sistemas e Desenvolvedor',
+      },
+      company: {
+        en: 'Soluções UP',
+        pt: 'Soluções UP',
+      },
+      location: {
+        en: 'Boa Vista, Brazil',
+        pt: 'Boa Vista, Brasil',
+      },
+      period: {
+        en: 'August, 2026 - Current date',
+        pt: 'Agosto, 2026 - Data atual',
+      },
+      responsibilities: [
+        {
+          en: 'Develop systems for automation of processes',
+          pt: 'Desenvolver sistemas para automação de processos',
+        },
+        {
+          en: 'Understand the needs of the clients and propose solutions to meet their demands',
+          pt: 'Compreender as necessidades dos clientes e propor soluções para atender seus requisitos',
+        },
+      ],
+      experiences: [
+        {
+          en: 'Develop solutions for face recognition terminals through MQTT and RESTful APIs',
+          pt: 'Desenvolver soluções para terminais de reconhecimento facial através de MQTT e APIs RESTful',
+        },
+        {
+          en: 'Guarantee the quality and security of the systems developed through automated tests and code refactoring',
+          pt: 'Garantir a qualidade e segurança dos sistemas desenvolvidos por meio de testes automatizados e refatoração de código',
         },
       ],
     },

@@ -63,7 +63,7 @@ export const ProjectsList = [
           'prisma orm',
           'next-auth',
         ],
-        demoLink: 'https://mentoringhub-network.vercel.app/',
+        demoLink: 'https://mentoringhub.com.br/',
         githubLink: '#',
       },
       {

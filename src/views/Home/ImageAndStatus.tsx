@@ -4,11 +4,11 @@ type Props = {
   selectedLanguage: string
 }
 
-const status = true
+const status = false
 
 const statusText = {
-  en: 'Looking for new opportunities...',
-  pt: 'Buscando novas oportunidades...',
+  en: 'Not available for hire, but open to contributing to open-source projects',
+  pt: 'Não disponível para contratação, mas aberto a contribuir para projetos de código aberto',
 }
 
 function ImageAndStatus({ selectedLanguage }: Props) {
